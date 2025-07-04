@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="accord.css" />
+    <link rel="stylesheet" href="catstore.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
@@ -23,7 +23,7 @@
       rel="stylesheet"
     />
     <link rel="icon" type="image/x-icon" href="../canva/uni-logo.png" />
-    <title>Koci merch</title>
+    <title>🐈 Kocie bluzy</title>
   </head>
   <body>
     <!-- GLOBAL WRAPPER -->
@@ -31,52 +31,49 @@
       <!-- TOP SECTION -->
       <section class="top-section">
         <div class="top-content">
-          <img id="logo" src="../canva/uni-logo.png" alt="" />
+          <div class="menu-area">
+            <button id="hamburger">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="26px"
+                viewBox="0 -960 960 960"
+                width="26px"
+                fill="#000"
+                class="hidden"
+              >
+                <path
+                  d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                heigh="26px"
+                width="26px"
+                fill="none"
+                stroke="#000"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M4 12h16" />
+                <path d="M4 18h16" />
+                <path d="M4 6h16" />
+              </svg>
+            </button>
+          </div>
 
-          <button id="hamburger">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="24px"
-              viewBox="0 -960 960 960"
-              width="24px"
-              fill="#000"
-              class="hidden"
-            >
-              <path
-                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
-              />
-            </svg>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="#000"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path d="M4 12h16" />
-              <path d="M4 18h16" />
-              <path d="M4 6h16" />
-            </svg>
-          </button>
+          <div class="logo">
+            <img src="logo.png" alt="" />
+          </div>
 
           <nav class="nav">
             <ul>
-              <li><a href="kubki.html">Kocie kubeczki</a></li>
-              <li><a href="merch.html">Merchandise</a></li>
-              <li><a href="akcesoria.html">Akcesoria</a></li>
+              <li><a href="index.html">Kubki z nadrukiem kota</a></li>
+              <li><a href="bluzy.html">Kocie bluzy</a></li>
+              <li><a href="koszulki.html">Kocie koszulki</a></li>
             </ul>
           </nav>
-
-          <form class="search-form">
-            <input
-              type="search"
-              id="search-input"
-              name="q"
-              placeholder="Wyszukaj produkt"
-            />
-          </form>
 
           <div class="user">
             <div class="user-icon heart">
@@ -97,57 +94,53 @@
             <div class="user-icon cart">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="28"
-                height="28"
-                viewBox="0 0 24 24"
-                fill="#5e5549"
-                stroke="#5e5549"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-shopping-cart-icon lucide-shopping-cart"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#000000"
               >
-                <circle cx="8" cy="21" r="1" />
-                <circle cx="19" cy="21" r="1" />
                 <path
-                  d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
+                  d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"
                 />
               </svg>
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <path
-                d="M6.979 3.074a6 6 0 0 1 4.988 1.425l.037 .033l.034 -.03a6 6 0 0 1 4.733 -1.44l.246 .036a6 6 0 0 1 3.364 10.008l-.18 .185l-.048 .041l-7.45 7.379a1 1 0 0 1 -1.313 .082l-.094 -.082l-7.493 -7.422a6 6 0 0 1 3.176 -10.215z"
-              />
             </div>
 
-            <!-- <div id="switchLight" class="extra-icon">
-              <span id="icon"
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-cloud-icon lucide-cloud"
-                >
-                  <path
-                    d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"
-                  />
-                </svg>
-              </span>
-            </div> -->
+            <div id="switchLight" class="extra-icon">
+              <span id="icon"> </span>
+            </div>
           </div>
         </div>
+      </section>
+      <!-- SEARCH SECTION -->
+      <section class="search-section">
+        <form class="search-form">
+          <div class="search-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26px"
+              viewBox="0 -960 960 960"
+              width="26px"
+              fill="#00000060"
+            >
+              <path
+                d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"
+              />
+            </svg>
+          </div>
+          <input
+            type="search"
+            id="search-input"
+            name="q"
+            placeholder="Wyszukaj produkt"
+          />
+        </form>
       </section>
       <!-- MID SECTION -->
       <section class="mid-section">
         <div class="mid-content">
           <div class="main-label">
             <div class="main-label-text">
-              <h3>Koci merchandise</h3>
+              <h3>Bluzy z nadrukiem</h3>
             </div>
 
             <div class="main-label-filter">
@@ -193,11 +186,32 @@
               </div>
             </div>
           </div>
-
-          <div class="product-container">
-            <div class="product">
-              <img class="product-image" src="../canva/cup1.jpg" alt="" />
+          <div class="product-container-merch">
+            <!-- <div class="product">
+              <img class="product-image" src="" alt="" />
+              <div class="product-data">
+                <div class="product-text-data">
+                  <h4>$product_name</h4>
+                  <h5>$product_currentPrice</h5>
+                  <h5><s>$product_previousPrice</s></h5>
+                  <div class="product-patterns">
+                    <div class="product-pattern"></div>
+                  </div>
+                </div>
+                <div class="product-addtocart-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 -960 960 960"
+                    fill="#000000"
+                  >
+                    <path
+                      d="M440-600v-120H320v-80h120v-120h80v120h120v80H520v120h-80ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z"
+                    />
+                  </svg>
+                </div>
+              </div>
             </div>
+          </div> -->
           </div>
         </div>
       </section>
@@ -233,13 +247,16 @@
             </form>
             <button>Dołącz teraz</button>
           </div>
-          <div class="blog-info">
+          <div class="blog-info1">
             <div class="blog-text">
               <p>Czym karmić młode kociaki?</p>
               <button>Odwiedź blog</button>
             </div>
-            <div class="blog-img">
-              <img src="cat4.jpg" alt="" />
+          </div>
+          <div class="blog-info2">
+            <div class="blog-text">
+              <p>Porady dot. zdrowego futerka</p>
+              <button>Odwiedź blog</button>
             </div>
           </div>
         </div>
@@ -256,6 +273,26 @@
             </p>
           </div>
 
+          <div class="store-details">
+            <h2>Kontakt</h2>
+            <h4>tel.: 888-222-555</h4>
+            <h4>catstore@cat.lovers</h4>
+            <h4>Białystok, 15-345</h4>
+            <h4>Sezamkowa 41</h4>
+            <span class="separator"></span>
+            <a>O nas</a>
+            <a>Kocie kubki</a>
+            <a>Koci bluzy</a>
+            <a>Kocie koszulki</a>
+            <a>Produkty ulubione</a>
+            <a>Twój koszyk</a>
+            <span class="separator"></span>
+            <a>Regulamin sklepu</a>
+            <a>Płatności i zwroty</a>
+            <a>Pomoc w zakupach</a>
+            <span class="separator"></span>
+          </div>
+
           <div class="sm">
             <div class="sm-svg">
               <svg
@@ -268,7 +305,7 @@
                 />
               </svg>
             </div>
-            <div class="sm-svg">
+            <!-- <div class="sm-svg">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="bi bi-youtube"
@@ -278,7 +315,7 @@
                   d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"
                 />
               </svg>
-            </div>
+            </div> -->
             <div class="sm-svg">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -291,12 +328,6 @@
               </svg>
             </div>
             <div class="sm-svg"></div>
-            <!-- <div class="sm-ico"> -->
-            <!-- <img src="../sm/fb.jpg" alt="" />
-              <img src="../sm/yt.jpg" alt="" />
-              <img src="../sm/in.jpg" alt="" />
-              <img src="../sm/gh.jpg" alt="" /> -->
-            <!-- </div> -->
           </div>
           <div class="thank-you">
             Projekt przeznaczony tylko i wyłącznie do celów prezentacyjnych.<br />
@@ -308,6 +339,7 @@
         </div>
       </section>
     </div>
-    <script src="accord.js"></script>
+    <script src="catstore.js"></script>
+    <script src="produkty.js"></script>
   </body>
 </html>
