@@ -47,13 +47,12 @@ html.dark {
   --color-button-background: #393956;
   --color-newsletter-background: pink;
   --color-search-input: #f2e9e4;
-  --color-text-current-price: #f34343;
   --color-accent: #f2e9e4;
   --color-svg-icon: #f2e9e4;
   --color-svg-ulubione: #f2e9e4;
   --color-svg-cart: #f2e9e4;
   --color-svg-account: #f2e9e4;
-  --color-text-current-price: #ff0000;
+  --color-text-current-price: #22223b;
 
   scroll-behavior: smooth;
 }
@@ -349,22 +348,28 @@ body {
 }
 .main-label-filter > div {
   background: var(--color-button-background);
-  border: 2px solid var(--color-accent);
+  border: 1px solid var(--color-accent);
   padding: 1rem;
   border-radius: var(--global-border-radius);
   display: flex;
-  /* gap: 0.5rem; */
   flex-direction: row;
   justify-content: center;
   align-items: center;
   cursor: pointer;
   transition: 0.2s ease;
-  height: 40px;
-  width: 40%;
+  box-sizing: border-box;
 }
 .main-label-filter h4 {
   margin: 0;
   padding: 0;
+}
+#filter {
+  height: 40px;
+  width: 25%;
+}
+#sort {
+  height: 40px;
+  width: 35%;
 }
 .product-container-mugs {
   display: grid;
@@ -446,7 +451,7 @@ h5 {
   object-fit: cover;
   object-position: center;
   border-radius: var(--global-border-radius);
-  border: 3px solid var(--color-accent);
+  border: 2px solid var(--color-accent);
   box-sizing: border-box;
   transition: 0.3s ease;
 }
