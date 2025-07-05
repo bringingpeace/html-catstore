@@ -1,28 +1,7 @@
 `use strict`;
 const html = document.documentElement;
-const themeIcon = document.getElementById("icon");
-const themeSwitchButton = document.querySelector("#switchLight");
 
-//zmiana ikony oraz trybu jasny ciemny + zapisywanie statusu do  browser memory
-// const updateThemeIcon = function (isDark) {
-//   themeIcon.innerHTML = isDark
-//     ? `<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm40-83q119-15 199.5-104.5T800-480q0-123-80.5-212.5T520-797v634Z"/></svg>`
-//     : `<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm40-83q119-15 199.5-104.5T800-480q0-123-80.5-212.5T520-797v634Z"/></svg>`;
-// };
-
-// if (localStorage.getItem("theme") === "dark") {
-//   html.classList.add("dark");
-//   updateThemeIcon(true);
-// } else {
-//   updateThemeIcon(false);
-// }
-
-// themeSwitchButton.addEventListener("click", function () {
-//   const isDarkMode = html.classList.toggle("dark");
-//   localStorage.setItem("theme", isDarkMode ? "dark" : "light");
-//   updateThemeIcon(isDarkMode);
-// });
-//
+//Animacja polubionego produktu
 const ulubione = document.querySelectorAll(".ulubione svg");
 const ulubioneWrapper = document.querySelectorAll(".ulubione-wrapper");
 const heart = document.querySelector(".heart");
@@ -123,13 +102,62 @@ layoutButton.addEventListener("click", function () {
   });
 });
 
-//contrast swapper
-const pinSwitch = document.querySelector(".test-pin");
-const swapper = document.querySelector(".test-swapper");
+//Zmiana trybu jasności
+const switcher = document.querySelector(".contrast-pin");
+const slider = document.querySelector(".contrast-slider");
+const logo = document.querySelector(".logo");
+// const logoLightTheme = document.querySelector(".logo-light-theme");
+// const logoDarkTheme = document.querySelector(".logo-dark-theme");
+//1. Funkcja przełączająca tryb
 
-const toggleTheme = function () {
-  pinSwitch.classList.toggle("pin-active");
-  swapper.classList.toggle("moon-phase");
-};
+function toggleTheme() {
+  const isDark = html.classList.toggle("dark");
 
-swapper.addEventListener("click", toggleTheme);
+  //2. Prezłączanie klasy styli
+  //a) switcher i slider toogluje klase na podstawie boolean isDark
+  // logoLightTheme.classList.toggle("hidden", isDark);
+  // logoDarkTheme.classList.toggle("hidden", isDark);
+  switcher.classList.toggle("pin-active", isDark);
+  slider.classList.toggle("moon-phase", isDark);
+  isDark
+    ? (logo.innerHTML =
+        '<img class="logo-dark-theme" src="logo-dark-theme.png" alt="" />')
+    : (logo.innerHTML =
+        '<img class="logo-light-theme" src="logo-light-theme.png" alt="" />');
+  // logoLightTheme.classList.toggle("hidden", isDark);
+  // logoDarkTheme.classList.toggle("hidden", !isDark);
+
+  //b) zapisuję do localStorage. Ustawiam 'theme' na boolean isDark czyli jeśli isDark istnieje(html ma .dark) to theme ustawia się na dark, jeśli isDark nie istnieje, jest false, to theme ustawia się na light.
+  localStorage.setItem("theme", isDark ? "dark" : "light");
+}
+//3.Odczytywanie localstorage i ustawianie trybu. Czyli na odświeżeniu strony, odwołuję się do localStorage i sparwdzam jaki był theme. Jeśli był dark, to znowu przypisuję klasę dark żeby ten tryb sie wyświetlił. Jeśli go nie było to nie robię nic, bo defaultowo jest ustawiony tryb light.
+// const savedTheme = localStorage.getItem("theme");
+// if (savedTheme === "dark") {
+//   html.classList.toggle("dark");
+//   switcher.classList.toggle("pin-active");
+//   slider.classList.toggle("moon-phase");
+// }
+//Update: Jeśli w pamięci zapisany był tryb dark, przy wejściu na stronę, za każdym razem triggerowała się animacja slidera. Korygujemy stan przy rozruchu strony:
+window.addEventListener("DOMContentLoaded", function () {
+  const savedTheme = this.localStorage.getItem("theme");
+  if (savedTheme === "dark") {
+    html.classList.add("dark");
+    slider.classList.add("moon-phase");
+    logo.innerHTML =
+      '<img class="logo-dark-theme" src="logo-dark-theme.png" alt="" />';
+    // logoLightTheme.classList.remove("hidden");
+    // logoDarkTheme.classList.add("hidden");
+
+    //wyłączam na chwilę transition z pinu, aby animacja przy jego wczytaniu z pamięci się nie ładowała
+    switcher.style.transition = "none";
+    switcher.classList.add("pin-active");
+    //Włączam transition ponownie po krótkiej chwili
+    this.requestAnimationFrame(function () {
+      switcher.style.transition = "left 0.6s ease";
+    });
+  } else {
+    logo.innerHTML =
+      '<img class="logo-light-theme" src="logo-light-theme.png" alt="" />';
+  }
+});
+slider.addEventListener("click", toggleTheme);
