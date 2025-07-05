@@ -38,7 +38,6 @@
                 height="26px"
                 viewBox="0 -960 960 960"
                 width="26px"
-                fill="#000"
                 class="hidden"
               >
                 <path
@@ -50,7 +49,6 @@
                 viewBox="0 0 24 24"
                 heigh="26px"
                 width="26px"
-                fill="none"
                 stroke="#000"
                 stroke-width="2"
                 stroke-linecap="round"
@@ -64,7 +62,8 @@
           </div>
 
           <div class="logo">
-            <img src="logo.png" alt="" />
+            <!-- <img class="logo-light-theme" src="logo-light-theme.png" alt="" /> -->
+            <!-- <img class="logo-dark-theme" src="logo-dark-theme.png" alt="" /> -->
           </div>
 
           <nav class="nav">
@@ -75,14 +74,13 @@
             </ul>
           </nav>
 
-          <div class="user">
-            <div class="user-icon heart">
+          <div class="nav-icons">
+            <div class="nav-icons-icon heart">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="28"
                 height="28"
                 viewBox="0 0 24 24"
-                fill="#F04848"
                 class="icon icon-tabler icons-tabler-filled icon-tabler-heart"
               >
                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
@@ -91,13 +89,13 @@
                 />
               </svg>
             </div>
-            <div class="user-icon cart">
+
+            <div class="nav-icons-icon cart">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 height="24px"
                 viewBox="0 -960 960 960"
                 width="24px"
-                fill="#000000"
               >
                 <path
                   d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"
@@ -105,8 +103,21 @@
               </svg>
             </div>
 
-            <div id="switchLight" class="extra-icon">
-              <span id="icon"> </span>
+            <div id="account">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                width="24px"
+                height="24px"
+              >
+                <path
+                  d="M399 384.2C376.9 345.8 335.4 320 288 320l-64 0c-47.4 0-88.9 25.8-111 64.2c35.2 39.2 86.2 63.8 143 63.8s107.8-24.7 143-63.8zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm256 16a72 72 0 1 0 0-144 72 72 0 1 0 0 144z"
+                />
+              </svg>
+            </div>
+
+            <div class="contrast-slider">
+              <div class="contrast-pin"></div>
             </div>
           </div>
         </div>
@@ -141,9 +152,6 @@
           <div class="main-label">
             <div class="main-label-text">
               <h3>Kubki z nadrukiem</h3>
-              <div class="test-swapper">
-                <div class="test-pin"></div>
-              </div>
             </div>
 
             <div class="main-label-filter">
