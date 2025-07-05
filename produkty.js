@@ -16,7 +16,7 @@ const kubki = [
     height: "16cm",
     diameter: "8,4cm",
     weight: "0,34kg",
-    images: ["../KUBKI/1.1.jpg", "../KUBKI/1.2.jpg", "../KUBKI/1.3.jpg"],
+    images: ["KUBKI/1.1.jpg", "KUBKI/1.2.jpg", "KUBKI/1.3.jpg"],
   },
   {
     id: 2,
@@ -33,7 +33,7 @@ const kubki = [
     height: "8cm",
     diameter: "10,2cm",
     weight: "0,29kg",
-    images: ["../KUBKI/2.1.jpg", "../KUBKI/2.2.jpg"],
+    images: ["KUBKI/2.1.jpg", "KUBKI/2.2.jpg"],
   },
   {
     id: 3,
@@ -49,7 +49,7 @@ const kubki = [
     height: "11cm",
     diameter: "9,4cm",
     weight: "0,31kg",
-    images: ["../KUBKI/3.jpg"],
+    images: ["KUBKI/3.jpg"],
   },
   {
     id: 4,
@@ -65,7 +65,7 @@ const kubki = [
     height: "10cm",
     diameter: "9,4cm",
     weight: "0,31kg",
-    images: ["../KUBKI/4.jpg"],
+    images: ["KUBKI/4.jpg"],
   },
   {
     id: 5,
@@ -82,7 +82,7 @@ const kubki = [
     height: "16cm",
     diameter: "8,4cm",
     weight: "0,34kg",
-    images: ["../KUBKI/5.1.jpg", "../KUBKI/5.2.jpg", "../KUBKI/5.3.jpg"],
+    images: ["KUBKI/5.1.jpg", "KUBKI/5.2.jpg", "KUBKI/5.3.jpg"],
   },
   {
     id: 6,
@@ -98,7 +98,7 @@ const kubki = [
     height: "16cm",
     diameter: "8,4cm",
     weight: "0,34kg",
-    images: ["../KUBKI/6.jpg"],
+    images: ["KUBKI/6.jpg"],
   },
   {
     id: 7,
@@ -114,7 +114,7 @@ const kubki = [
     height: "9cm",
     diameter: "8cm",
     weight: "0,30kg",
-    images: ["../KUBKI/7.jpg"],
+    images: ["KUBKI/7.jpg"],
   },
   {
     id: 8,
@@ -131,7 +131,7 @@ const kubki = [
     height: "16cm",
     diameter: "8,4cm",
     weight: "0,34kg",
-    images: ["../KUBKI/8.jpg"],
+    images: ["KUBKI/8.jpg"],
   },
   {
     id: 9,
@@ -148,7 +148,7 @@ const kubki = [
     height: "12cm",
     diameter: "9,4cm",
     weight: "0,32kg",
-    images: ["../KUBKI/9.1.jpg", "../KUBKI/9.2.jpg"],
+    images: ["KUBKI/9.1.jpg", "KUBKI/9.2.jpg"],
   },
   {
     id: 10,
@@ -164,7 +164,7 @@ const kubki = [
     height: "11cm",
     diameter: "8,4cm",
     weight: "0,31kg",
-    images: ["../KUBKI/10.jpg"],
+    images: ["KUBKI/10.jpg"],
   },
   {
     id: 11,
@@ -180,7 +180,7 @@ const kubki = [
     height: "16cm",
     diameter: "10cm",
     weight: "0,35kg",
-    images: ["../KUBKI/11.jpg"],
+    images: ["KUBKI/11.jpg"],
   },
   {
     id: 12,
@@ -197,7 +197,7 @@ const kubki = [
     height: "10cm",
     diameter: "9,4cm",
     weight: "0,32kg",
-    images: ["../KUBKI/12.1.jpg", "../KUBKI/12.2.jpg", "../KUBKI/12.3.jpg"],
+    images: ["KUBKI/12.1.jpg", "KUBKI/12.2.jpg", "KUBKI/12.3.jpg"],
   },
 ];
 
@@ -464,7 +464,7 @@ const wszystkieProdukty = [...kubki, ...bluzy, ...koszulki];
 const nameShortener = function (arr) {
   arr.forEach(function (element) {
     const imie = element.name;
-    const shortName = imie.slice(0, 26) + "...";
+    const shortName = imie.slice(0, 26);
     return (element.shortName = shortName);
   });
 };
@@ -492,23 +492,14 @@ const addMugs = function (arr) {
               <img class="product-image" src="${produkt.images[0]}" alt="" />
               <div class="product-data">
                 <div class="product-text-data">
-                  <h4 class="product_name">${produkt.shortName}</h4>
-                  <h5>${produkt.currentPrice}</h5>
-                  <h5><s>${produkt.previousPrice}</s></h5>
+                  <h4 class="product-name">${produkt.shortName}</h4> 
+                  <div class="product-price">
+                  <h5 class="product-current-price">${produkt.currentPrice}</h5>
+                  <h5 class="product-previous-price"><s>${produkt.previousPrice}</s></h5>
+                  </div>
                   <div class="product-patterns">
                   ${patternHTML}
                   </div>
-                </div>
-                <div class="product-addtocart-icon">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 -960 960 960"
-                    fill="#000000"
-                  >
-                    <path
-                      d="M440-600v-120H320v-80h120v-120h80v120h120v80H520v120h-80ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z"
-                    />
-                  </svg>
                 </div>
               </div>
             </div>
@@ -533,23 +524,14 @@ const addMerch = function (arr) {
               <img class="product-image" src="${produkt.images[0]}" alt="" />
               <div class="product-data">
                 <div class="product-text-data">
-                  <h4 class="product_name">${produkt.shortName}</h4>
-                  <h5>${produkt.currentPrice}</h5>
-                  <h5><s>${produkt.previousPrice}</s></h5>
+                  <h4 class="product-name">${produkt.shortName}</h4>
+                   <div class="product-price">
+                  <h5 class="product-current-price">${produkt.currentPrice}</h5>
+                  <h5 class="product-previous-price"><s>${produkt.previousPrice}</s></h5>
+                  </div>
                   <div class="product-patterns">
                   ${patternHTML}
                   </div>
-                </div>
-                <div class="product-addtocart-icon">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 -960 960 960"
-                    fill="#000000"
-                  >
-                    <path
-                      d="M440-600v-120H320v-80h120v-120h80v120h120v80H520v120h-80ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z"
-                    />
-                  </svg>
                 </div>
               </div>
             </div>
@@ -570,27 +552,18 @@ const addTshirts = function (arr) {
           .join("")
       : "";
     const productHTML = `
-    <div class="product">
+     <div class="product">
               <img class="product-image" src="${produkt.images[0]}" alt="" />
               <div class="product-data">
                 <div class="product-text-data">
-                  <h4 class="product_name">${produkt.shortName}</h4>
-                  <h5>${produkt.currentPrice}</h5>
-                  <h5><s>${produkt.previousPrice}</s></h5>
+                  <h4 class="product-name">${produkt.shortName}</h4>
+                   <div class="product-price">
+                  <h5 class="product-current-price">${produkt.currentPrice}</h5>
+                  <h5 class="product-previous-price"><s>${produkt.previousPrice}</s></h5>
+                  </div>
                   <div class="product-patterns">
                   ${patternHTML}
                   </div>
-                </div>
-                <div class="product-addtocart-icon">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 -960 960 960"
-                    fill="#000000"
-                  >
-                    <path
-                      d="M440-600v-120H320v-80h120v-120h80v120h120v80H520v120h-80ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z"
-                    />
-                  </svg>
                 </div>
               </div>
             </div>
