@@ -4,24 +4,24 @@ const themeIcon = document.getElementById("icon");
 const themeSwitchButton = document.querySelector("#switchLight");
 
 //zmiana ikony oraz trybu jasny ciemny + zapisywanie statusu do  browser memory
-const updateThemeIcon = function (isDark) {
-  themeIcon.innerHTML = isDark
-    ? `<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M200-320q-66 0-113-47T40-480q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47Zm480 80q-100 0-170-70t-70-170q0-100 70-170t170-70q100 0 170 70t70 170q0 100-70 170t-170 70Zm0-80q66 0 113-47t47-113q0-66-47-113t-113-47q-66 0-113 47t-47 113q0 66 47 113t113 47Z"/></svg>`
-    : `<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M200-320q-66 0-113-47T40-480q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47Zm0-80q33 0 56.5-23.5T280-480q0-33-23.5-56.5T200-560q-33 0-56.5 23.5T120-480q0 33 23.5 56.5T200-400Zm480 160q-100 0-170-70t-70-170q0-100 70-170t170-70q100 0 170 70t70 170q0 100-70 170t-170 70Z"/></svg>`;
-};
+// const updateThemeIcon = function (isDark) {
+//   themeIcon.innerHTML = isDark
+//     ? `<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm40-83q119-15 199.5-104.5T800-480q0-123-80.5-212.5T520-797v634Z"/></svg>`
+//     : `<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm40-83q119-15 199.5-104.5T800-480q0-123-80.5-212.5T520-797v634Z"/></svg>`;
+// };
 
-if (localStorage.getItem("theme") === "dark") {
-  html.classList.add("dark");
-  updateThemeIcon(true);
-} else {
-  updateThemeIcon(false);
-}
+// if (localStorage.getItem("theme") === "dark") {
+//   html.classList.add("dark");
+//   updateThemeIcon(true);
+// } else {
+//   updateThemeIcon(false);
+// }
 
-themeSwitchButton.addEventListener("click", function () {
-  const isDarkMode = html.classList.toggle("dark");
-  localStorage.setItem("theme", isDarkMode ? "dark" : "light");
-  updateThemeIcon(isDarkMode);
-});
+// themeSwitchButton.addEventListener("click", function () {
+//   const isDarkMode = html.classList.toggle("dark");
+//   localStorage.setItem("theme", isDarkMode ? "dark" : "light");
+//   updateThemeIcon(isDarkMode);
+// });
 //
 const ulubione = document.querySelectorAll(".ulubione svg");
 const ulubioneWrapper = document.querySelectorAll(".ulubione-wrapper");
@@ -122,3 +122,14 @@ layoutButton.addEventListener("click", function () {
     image.classList.toggle("imageSingleLayout");
   });
 });
+
+//contrast swapper
+const pinSwitch = document.querySelector(".test-pin");
+const swapper = document.querySelector(".test-swapper");
+
+const toggleTheme = function () {
+  pinSwitch.classList.toggle("pin-active");
+  swapper.classList.toggle("moon-phase");
+};
+
+swapper.addEventListener("click", toggleTheme);
