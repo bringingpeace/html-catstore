@@ -341,11 +341,12 @@ body {
 }
 .main-label-filter {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 1rem;
-  /* justify-content: space-between; */
+  flex-direction: row;
+  /* align-items: flex-start; */
+  /* gap: 1rem; */
+  justify-content: space-between;
   font-size: var(--global-text);
+  background: blue;
 }
 .main-label svg {
   fill: var(--color-text-primary);
@@ -358,9 +359,12 @@ body {
   display: flex;
   /* gap: 0.5rem; */
   flex-direction: row;
+  justify-content: center;
   align-items: center;
   cursor: pointer;
   transition: 0.2s ease;
+  height: 40px;
+  width: 50%;
 }
 .main-label-filter h4 {
   margin: 0;
