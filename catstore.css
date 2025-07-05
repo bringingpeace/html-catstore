@@ -116,7 +116,6 @@ body {
   display: flex;
   justify-content: flex-start;
   width: 30%;
-  /* background: red; */
 }
 .logo img {
   height: 16px;
@@ -129,7 +128,7 @@ body {
   top: 0;
   z-index: 100;
   background: var(--color-top-bottom);
-  height: 80px;
+  height: 60px;
 }
 .top-content {
   display: flex;
@@ -137,13 +136,11 @@ body {
   align-items: center;
   justify-content: space-between;
   width: 94%;
-  height: 80px;
+  height: 60px;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 .nav-icons {
-  /* background: blue; */
-  /* border-radius: var(--global-border-radius); */
   width: 60%;
   height: inherit;
   display: flex;
@@ -151,12 +148,8 @@ body {
   justify-content: flex-end;
   align-items: center;
   gap: 0.5rem;
-  /* background: red; */
 }
-.nav-icons-icon {
-  /* background: brown; */
-  /* height: 100%; */
-}
+
 .contrast-slider {
   width: 60px;
   height: 30px;
@@ -169,7 +162,6 @@ body {
   overflow: hidden;
   display: flex;
   align-items: center;
-  /* transition: 1s ease; */
 }
 .moon-phase {
   background-image: url("moon.jpg");
@@ -190,7 +182,6 @@ body {
   background: #1fa9f494;
 }
 .menu-area {
-  /* background: red; */
   display: flex;
   flex-direction: row;
   align-items: center;
