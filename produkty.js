@@ -1,28 +1,203 @@
 "use strict";
 
-const produkty = [
+const kubki = [
   {
     id: 1,
-    name: "Kubek testowy",
-    currentPrice: 15.99,
-    previousPrice: 10.99,
-    images: [`../ai/HOME/KUBKI/cup1.jpg`, `../ai/HOME/KUBKI/cup2.jpg`],
-    pattern: ["red", "orange", "brown", "black"],
+    name: "Kubek z poranną kawusią",
+    currentPrice: 23.5,
+    previousPrice: 27.25,
+    amount: 8,
+    style: ["wysoki kubek"],
+    pattern: ["beige", "pink", "purple"],
+    description:
+      "Piękny i wesoły kubek z kotem pijącym kawusię w roli głównej. To kubek dla prawdziwego smakosza kawy. Został wykonany z wysokiej jakości porcelany. Jest on świetnym pomysłem na prezent. ",
+    composition: "PORCELAIN",
+    capacity: "500ml",
+    height: "16cm",
+    diameter: "8,4cm",
+    weight: "0,34kg",
+    images: ["../KUBKI/1.1.jpg", "../KUBKI/1.2.jpg", "../KUBKI/1.3.jpg"],
   },
   {
     id: 2,
-    name: "Kubek testowy2",
-    currentPrice: 25.99,
-    previousPrice: 20.99,
-    images: [`../ai/HOME/KUBKI/cup3.jpg`, `../ai/HOME/KUBKI/cup4.jpg`],
-    pattern: ["blue", "green"],
+    name: "Kubek z milusińskimi kotkami",
+    currentPrice: 18.99,
+    previousPrice: 20.55,
+    amount: 14,
+    style: ["niski kubek"],
+    pattern: ["beige", "pink"],
+    description:
+      "Piękny kubek z kotami w roli głównej. Kotki wtulają się w siebie i dodają uroczego charakteru temu kubkowi. Został on wykonany z wysokiej jakości terakoty. Jest on świetnym pomysłem na prezent. ",
+    composition: "TERRACOTTA",
+    capacity: "300ml",
+    height: "8cm",
+    diameter: "10,2cm",
+    weight: "0,29kg",
+    images: ["../KUBKI/2.1.jpg", "../KUBKI/2.2.jpg"],
   },
   {
     id: 3,
-    name: "Kubek testowy3",
-    currentPrice: 35.99,
-    previousPrice: 30.99,
-    images: [`../ai/HOME/KUBKI/cup5.jpg`, `../ai/HOME/KUBKI/cup6.jpg`],
+    name: "Kubek z kotem wyprowadzającym psy na spacer",
+    currentPrice: 17.59,
+    previousPrice: 21.25,
+    amount: 2,
+    style: ["niski kubek"],
+    description:
+      "Piękny i zabawny kubek z kotem w roli głównej. Kot wyprowadza psy na spacer na smyczy. Jeśli żyłeś z kotem wiesz już, że to on jest panem wszystkich i wszystkiego-kubek pokazuje wyższą hierarchię kota nad psem. Został wykonany z wysokiej jakości porcelany. Jest on świetnym pomysłem na prezent. ",
+    composition: "PORCELAIN",
+    capacity: "400ml",
+    height: "11cm",
+    diameter: "9,4cm",
+    weight: "0,31kg",
+    images: ["../KUBKI/3.jpg"],
+  },
+  {
+    id: 4,
+    name: "Kubek z uroczym kotkiem",
+    currentPrice: 14.99,
+    previousPrice: 18,
+    amount: 8,
+    style: ["niski kubek"],
+    description:
+      "Piękny i wesoły kubek z kotem w roli głównej. Czy skradł również Twoje serce? Został wykonany z wysokiej jakości ceramiki. Jest on świetnym pomysłem na prezent. ",
+    composition: "CERAMICS",
+    capacity: "350ml",
+    height: "10cm",
+    diameter: "9,4cm",
+    weight: "0,31kg",
+    images: ["../KUBKI/4.jpg"],
+  },
+  {
+    id: 5,
+    name: "Kubek z kotem w płaszczyku",
+    currentPrice: 24.25,
+    previousPrice: 28.25,
+    amount: 11,
+    style: ["wysoki kubek"],
+    pattern: ["beige", "pink", "white"],
+    description:
+      "Piękny i wesoły kubek z kotem w płaszczyku w roli głównej. Czy ten kotem się dokądś wybiera? Został wykonany z wysokiej jakości porcelany. Jest on świetnym pomysłem na prezent. ",
+    composition: "PORCELAIN",
+    capacity: "500ml",
+    height: "16cm",
+    diameter: "8,4cm",
+    weight: "0,34kg",
+    images: ["../KUBKI/5.1.jpg", "../KUBKI/5.2.jpg", "../KUBKI/5.3.jpg"],
+  },
+  {
+    id: 6,
+    name: "Kubek z kawą na wynos",
+    currentPrice: 17.45,
+    previousPrice: 21.25,
+    amount: 16,
+    style: ["wysoki kubek"],
+    description:
+      "Piękny i wesoły kubek z kotem trzymającym bezkłaczkową kawusię na wynos w roli głównej. To kubek dla prawdziwego smakosza kawy. Został wykonany z wysokiej jakości porcelany. Jest on świetnym pomysłem na prezent. ",
+    composition: "PORCELAIN",
+    capacity: "500ml",
+    height: "16cm",
+    diameter: "8,4cm",
+    weight: "0,34kg",
+    images: ["../KUBKI/6.jpg"],
+  },
+  {
+    id: 7,
+    name: "Kubek z dwoma rudzielcami",
+    currentPrice: 13.35,
+    previousPrice: 15.25,
+    amount: 6,
+    style: ["niski kubek"],
+    description:
+      "Piękny i wesoły kubek z dwoma rudymi kotkami bawiącymi się kłębkiem włóczki w roli głównej. Został wykonany z wysokiej jakości porcelany. Jest on świetnym pomysłem na prezent. ",
+    composition: "PORCELAIN",
+    capacity: "300ml",
+    height: "9cm",
+    diameter: "8cm",
+    weight: "0,30kg",
+    images: ["../KUBKI/7.jpg"],
+  },
+  {
+    id: 8,
+    name: "Kubek z kocią jogą",
+    currentPrice: 25.55,
+    previousPrice: 20.99,
+    amount: 8,
+    style: ["wysoki kubek"],
+    pattern: ["beige", "pink", "purple"],
+    description:
+      "Piękny i wesoły kubek z ćwiczącym na macie kotem w roli głównej. Ten kubek motywuje do działania o każdej porze dnia. Został wykonany z wysokiej jakości porcelany. Jest on świetnym pomysłem na prezent. ",
+    composition: "PORCELAIN",
+    capacity: "500ml",
+    height: "16cm",
+    diameter: "8,4cm",
+    weight: "0,34kg",
+    images: ["../KUBKI/8.jpg"],
+  },
+  {
+    id: 9,
+    name: "Kubek z kotem w koszyczku",
+    currentPrice: 10.5,
+    previousPrice: 8.5,
+    amount: 5,
+    style: ["niski kubek"],
+    pattern: ["beige", "pink"],
+    description:
+      "Piękny i wesoły kubek z białym kotem w koszyczku. Został wykonany z wysokiej jakości porcelany. Jest on świetnym pomysłem na prezent. ",
+    composition: "PORCELAIN",
+    capacity: "350ml",
+    height: "12cm",
+    diameter: "9,4cm",
+    weight: "0,32kg",
+    images: ["../KUBKI/9.1.jpg", "../KUBKI/9.2.jpg"],
+  },
+  {
+    id: 10,
+    name: "Kubek z kotami na drapaku",
+    currentPrice: 12.5,
+    previousPrice: 12.5,
+    amount: 5,
+    style: ["niski kubek"],
+    description:
+      "Piękny i wesoły kubek z kotami drapiącymi drapak. Został wykonany z wysokiej jakości porcelany. Jest on świetnym pomysłem na prezent. ",
+    composition: "PORCELAIN",
+    capacity: "350ml",
+    height: "11cm",
+    diameter: "8,4cm",
+    weight: "0,31kg",
+    images: ["../KUBKI/10.jpg"],
+  },
+  {
+    id: 11,
+    name: "Kubek z zielonookim kotem",
+    currentPrice: 15.25,
+    previousPrice: 15.25,
+    amount: 15,
+    style: ["wysoki kubek"],
+    description:
+      "Piękny kubek z zielonookim kotem w roli głównej. Został wykonany z wysokiej jakości porcelany. Jest on świetnym pomysłem na prezent. ",
+    composition: "PORCELAIN",
+    capacity: "500ml",
+    height: "16cm",
+    diameter: "10cm",
+    weight: "0,35kg",
+    images: ["../KUBKI/11.jpg"],
+  },
+  {
+    id: 12,
+    name: "Kubek z Yin i Yang",
+    currentPrice: 10.5,
+    previousPrice: 8.5,
+    amount: 5,
+    style: ["niski kubek"],
+    pattern: ["beige", "pink", "green"],
+    description:
+      "Piękny i wesoły kubek z kotami tworzącymi harmonię jak Yin i Yang. Został wykonany z wysokiej jakości porcelany. Jest on świetnym pomysłem na prezent. ",
+    composition: "PORCELAIN",
+    capacity: "400ml",
+    height: "10cm",
+    diameter: "9,4cm",
+    weight: "0,32kg",
+    images: ["../KUBKI/12.1.jpg", "../KUBKI/12.2.jpg", "../KUBKI/12.3.jpg"],
   },
 ];
 
@@ -32,7 +207,7 @@ const bluzy = [
     name: "Bluza ze śpiącym Mruczkiem",
     currentPrice: 21.5,
     previousPrice: 26.99,
-    amound: 10,
+    amount: 10,
     pattern: ["pink", "brown"],
     sex: "woman",
     styl: "bluza z kapturem",
@@ -48,7 +223,7 @@ const bluzy = [
     name: "Bluza z bajecznym kotkiem",
     currentPrice: 25.5,
     previousPrice: 24.99,
-    amound: 15,
+    amount: 15,
     pattern: ["pink", "beige", "yellow"],
     sex: ["woman", "man", "unisex"],
     styl: "bluza z kapturem",
@@ -68,7 +243,7 @@ const bluzy = [
     name: "Bluza ze słodkim buraskiem",
     currentPrice: 25.5,
     previousPrice: 27.25,
-    amound: 4,
+    amount: 4,
     sex: ["woman", "man", "unisex"],
     styl: ["bluza z kapturem", "bluza z kieszenią"],
     description:
@@ -83,7 +258,7 @@ const bluzy = [
     name: "Bluza z ucinającym sobie drzemkę kotem na laptopie",
     currentPrice: 28.5,
     previousPrice: 28.5,
-    amound: 20,
+    amount: 20,
     sex: ["woman", "man", "unisex"],
     styl: ["bluza z kapturem", "bluza z kieszenią"],
     description:
@@ -98,7 +273,7 @@ const bluzy = [
     name: "Bluza z uroczym kociakiem",
     currentPrice: 22.25,
     previousPrice: 23.5,
-    amound: 17,
+    amount: 17,
     sex: ["woman", "man", "unisex"],
     styl: ["bluza z kapturem", "bluza z kieszenią"],
     description:
@@ -113,7 +288,7 @@ const bluzy = [
     name: "Bluza z przyjaciółmi",
     currentPrice: 26.5,
     previousPrice: 25.5,
-    amound: 27,
+    amount: 27,
     sex: ["woman", "man", "unisex"],
     styl: ["bluza bez kaptura"],
     description:
@@ -128,7 +303,7 @@ const bluzy = [
     name: "Bluza z rozbrykanym kotkiem",
     currentPrice: 22.5,
     previousPrice: 25.5,
-    amound: 18,
+    amount: 18,
     sex: "woman",
     styl: ["bluza z kapturem", "bluza z kieszenią"],
     description:
@@ -143,7 +318,7 @@ const bluzy = [
     name: "Bluza z kotem ogrodnika",
     currentPrice: 24.5,
     previousPrice: 25.5,
-    amound: 14,
+    amount: 14,
     sex: ["woman", "man", "unisex"],
     styl: ["bluza bez kaptura"],
     description:
@@ -158,7 +333,7 @@ const bluzy = [
     name: "Bluza z puszystym kotkiem",
     currentPrice: 24.5,
     previousPrice: 25.5,
-    amound: 14,
+    amount: 14,
     sex: ["woman", "man", "unisex"],
     styl: ["bluza bez kaptura"],
     description:
@@ -284,7 +459,7 @@ const koszulki = [
   },
 ];
 
-const wszystkieProdukty = [...produkty, ...bluzy, ...koszulki];
+const wszystkieProdukty = [...kubki, ...bluzy, ...koszulki];
 
 const nameShortener = function (arr) {
   arr.forEach(function (element) {
@@ -293,7 +468,7 @@ const nameShortener = function (arr) {
     return (element.shortName = shortName);
   });
 };
-nameShortener(produkty);
+nameShortener(kubki);
 nameShortener(bluzy);
 nameShortener(koszulki);
 
@@ -424,7 +599,7 @@ const addTshirts = function (arr) {
   });
 };
 
-if (productAreaMugs) addMugs(produkty);
+if (productAreaMugs) addMugs(kubki);
 
 if (productAreaMerch) addMerch(bluzy);
 
