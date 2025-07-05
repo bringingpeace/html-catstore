@@ -31,6 +31,40 @@ html.dark {
   --color-accent: #e1d8c9;
   scroll-behavior: smooth;
 }
+.test-swapper {
+  width: 100px;
+  height: 50px;
+  /* background: #d9d6d6ae; */
+  background-image: url("sun.jpg");
+  background-size: cover;
+  border: 5px solid #fff;
+  box-shadow: inset 0px 0px 5px #828282;
+  border-radius: 30px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  transition: 0.3s ease;
+}
+.moon-phase {
+  background-image: url("moon.jpg");
+  background-size: cover;
+}
+
+.test-pin {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+
+  background: rgba(243, 121, 40, 0.755);
+  position: absolute;
+  transform: translateX(0px);
+  transition: 0.3s ease;
+}
+.pin-active {
+  transform: translateX(50px);
+  background: rgba(31, 169, 244, 0.582);
+}
 body {
   margin: 0;
   /* background-color: var(--color-bg-main); */
