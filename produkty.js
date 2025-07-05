@@ -6,6 +6,7 @@ const kubki = [
     name: "Kubek z poranną kawusią",
     currentPrice: 23.5,
     previousPrice: 27.25,
+    currency: "PLN",
     amount: 8,
     style: ["wysoki kubek"],
     pattern: ["beige", "pink", "purple"],
@@ -23,6 +24,7 @@ const kubki = [
     name: "Kubek z milusińskimi kotkami",
     currentPrice: 18.99,
     previousPrice: 20.55,
+    currency: "PLN",
     amount: 14,
     style: ["niski kubek"],
     pattern: ["beige", "pink"],
@@ -40,6 +42,7 @@ const kubki = [
     name: "Kubek z kotem wyprowadzającym psy na spacer",
     currentPrice: 17.59,
     previousPrice: 21.25,
+    currency: "PLN",
     amount: 2,
     style: ["niski kubek"],
     description:
@@ -56,6 +59,7 @@ const kubki = [
     name: "Kubek z uroczym kotkiem",
     currentPrice: 14.99,
     previousPrice: 18,
+    currency: "PLN",
     amount: 8,
     style: ["niski kubek"],
     description:
@@ -72,6 +76,7 @@ const kubki = [
     name: "Kubek z kotem w płaszczyku",
     currentPrice: 24.25,
     previousPrice: 28.25,
+    currency: "PLN",
     amount: 11,
     style: ["wysoki kubek"],
     pattern: ["beige", "pink", "white"],
@@ -89,6 +94,7 @@ const kubki = [
     name: "Kubek z kawą na wynos",
     currentPrice: 17.45,
     previousPrice: 21.25,
+    currency: "PLN",
     amount: 16,
     style: ["wysoki kubek"],
     description:
@@ -105,6 +111,7 @@ const kubki = [
     name: "Kubek z dwoma rudzielcami",
     currentPrice: 13.35,
     previousPrice: 15.25,
+    currency: "PLN",
     amount: 6,
     style: ["niski kubek"],
     description:
@@ -121,9 +128,9 @@ const kubki = [
     name: "Kubek z kocią jogą",
     currentPrice: 25.55,
     previousPrice: 20.99,
+    currency: "PLN",
     amount: 8,
     style: ["wysoki kubek"],
-    pattern: ["beige", "pink", "purple"],
     description:
       "Piękny i wesoły kubek z ćwiczącym na macie kotem w roli głównej. Ten kubek motywuje do działania o każdej porze dnia. Został wykonany z wysokiej jakości porcelany. Jest on świetnym pomysłem na prezent. ",
     composition: "PORCELAIN",
@@ -138,6 +145,7 @@ const kubki = [
     name: "Kubek z kotem w koszyczku",
     currentPrice: 10.5,
     previousPrice: 8.5,
+    currency: "PLN",
     amount: 5,
     style: ["niski kubek"],
     pattern: ["beige", "pink"],
@@ -155,6 +163,7 @@ const kubki = [
     name: "Kubek z kotami na drapaku",
     currentPrice: 12.5,
     previousPrice: 12.5,
+    currency: "PLN",
     amount: 5,
     style: ["niski kubek"],
     description:
@@ -171,6 +180,7 @@ const kubki = [
     name: "Kubek z zielonookim kotem",
     currentPrice: 15.25,
     previousPrice: 15.25,
+    currency: "PLN",
     amount: 15,
     style: ["wysoki kubek"],
     description:
@@ -187,6 +197,7 @@ const kubki = [
     name: "Kubek z Yin i Yang",
     currentPrice: 10.5,
     previousPrice: 8.5,
+    currency: "PLN",
     amount: 5,
     style: ["niski kubek"],
     pattern: ["beige", "pink", "green"],
@@ -207,6 +218,7 @@ const bluzy = [
     name: "Bluza ze śpiącym Mruczkiem",
     currentPrice: 21.5,
     previousPrice: 26.99,
+    currency: "PLN",
     amount: 10,
     pattern: ["pink", "brown"],
     sex: "woman",
@@ -223,6 +235,7 @@ const bluzy = [
     name: "Bluza z bajecznym kotkiem",
     currentPrice: 25.5,
     previousPrice: 24.99,
+    currency: "PLN",
     amount: 15,
     pattern: ["pink", "beige", "yellow"],
     sex: ["woman", "man", "unisex"],
@@ -243,6 +256,7 @@ const bluzy = [
     name: "Bluza ze słodkim buraskiem",
     currentPrice: 25.5,
     previousPrice: 27.25,
+    currency: "PLN",
     amount: 4,
     sex: ["woman", "man", "unisex"],
     styl: ["bluza z kapturem", "bluza z kieszenią"],
@@ -258,6 +272,7 @@ const bluzy = [
     name: "Bluza z ucinającym sobie drzemkę kotem na laptopie",
     currentPrice: 28.5,
     previousPrice: 28.5,
+    currency: "PLN",
     amount: 20,
     sex: ["woman", "man", "unisex"],
     styl: ["bluza z kapturem", "bluza z kieszenią"],
@@ -273,6 +288,7 @@ const bluzy = [
     name: "Bluza z uroczym kociakiem",
     currentPrice: 22.25,
     previousPrice: 23.5,
+    currency: "PLN",
     amount: 17,
     sex: ["woman", "man", "unisex"],
     styl: ["bluza z kapturem", "bluza z kieszenią"],
@@ -288,6 +304,7 @@ const bluzy = [
     name: "Bluza z przyjaciółmi",
     currentPrice: 26.5,
     previousPrice: 25.5,
+    currency: "PLN",
     amount: 27,
     sex: ["woman", "man", "unisex"],
     styl: ["bluza bez kaptura"],
@@ -303,6 +320,7 @@ const bluzy = [
     name: "Bluza z rozbrykanym kotkiem",
     currentPrice: 22.5,
     previousPrice: 25.5,
+    currency: "PLN",
     amount: 18,
     sex: "woman",
     styl: ["bluza z kapturem", "bluza z kieszenią"],
@@ -318,6 +336,7 @@ const bluzy = [
     name: "Bluza z kotem ogrodnika",
     currentPrice: 24.5,
     previousPrice: 25.5,
+    currency: "PLN",
     amount: 14,
     sex: ["woman", "man", "unisex"],
     styl: ["bluza bez kaptura"],
@@ -333,6 +352,7 @@ const bluzy = [
     name: "Bluza z puszystym kotkiem",
     currentPrice: 24.5,
     previousPrice: 25.5,
+    currency: "PLN",
     amount: 14,
     sex: ["woman", "man", "unisex"],
     styl: ["bluza bez kaptura"],
@@ -350,6 +370,7 @@ const koszulki = [
     name: "Koszulka z białym futrzakiem",
     currentPrice: 25.5,
     previousPrice: 27.25,
+    currency: "PLN",
     amount: 6,
     sex: ["woman", "man"],
     styl: ["koszulka na krótki rękaw"],
@@ -364,6 +385,7 @@ const koszulki = [
     name: "Top - Chodź się PSItul",
     currentPrice: 25.5,
     previousPrice: 27.25,
+    currency: "PLN",
     amount: 9,
     sex: ["woman", "man"],
     styl: ["top"],
@@ -378,6 +400,7 @@ const koszulki = [
     name: "Koszulka z kocią rodzinką",
     currentPrice: 15.85,
     previousPrice: 23.25,
+    currency: "PLN",
     amount: 15,
     sex: ["woman"],
     styl: ["koszulka na krótki rękaw"],
@@ -392,6 +415,7 @@ const koszulki = [
     name: "Koszulka z trzema łobuzami",
     currentPrice: 17.5,
     previousPrice: 20.4,
+    currency: "PLN",
     amount: 8,
     sex: ["woman", "man"],
     styl: ["koszulka na krótki rękaw"],
@@ -406,6 +430,7 @@ const koszulki = [
     name: "Koszulka/Top dla gamera",
     currentPrice: 10.7,
     previousPrice: 12.45,
+    currency: "PLN",
     amount: 4,
     sex: ["woman", "man"],
     styl: ["top"],
@@ -420,6 +445,7 @@ const koszulki = [
     name: "Koszulka/Top ze śpioszkami",
     currentPrice: 8,
     previousPrice: 15.25,
+    currency: "PLN",
     amount: 11,
     sex: ["woman", "man"],
     styl: ["top"],
@@ -434,6 +460,7 @@ const koszulki = [
     name: "Top z kotem kanapowcem",
     currentPrice: 15.5,
     previousPrice: 10,
+    currency: "PLN",
     amount: 7,
     sex: ["woman", "man"],
     styl: ["top"],
@@ -448,6 +475,7 @@ const koszulki = [
     name: "Top z głodnym kotem",
     currentPrice: 17.5,
     previousPrice: 9,
+    currency: "PLN",
     amount: 3,
     sex: ["woman", "man"],
     styl: ["top"],
@@ -494,8 +522,8 @@ const addMugs = function (arr) {
                 <div class="product-text-data">
                   <h4 class="product-name">${produkt.shortName}</h4> 
                   <div class="product-price">
-                  <h5 class="product-current-price">${produkt.currentPrice}</h5>
-                  <h5 class="product-previous-price"><s>${produkt.previousPrice}</s></h5>
+                  <h5 class="product-current-price">${produkt.currentPrice} ${produkt.currency}</h5>
+                  <h5 class="product-previous-price"><s>${produkt.previousPrice} ${produkt.currency}</s></h5>
                   </div>
                   <div class="product-patterns">
                   ${patternHTML}
@@ -526,8 +554,8 @@ const addMerch = function (arr) {
                 <div class="product-text-data">
                   <h4 class="product-name">${produkt.shortName}</h4>
                    <div class="product-price">
-                  <h5 class="product-current-price">${produkt.currentPrice}</h5>
-                  <h5 class="product-previous-price"><s>${produkt.previousPrice}</s></h5>
+                  <h5 class="product-current-price">${produkt.currentPrice} ${produkt.currency}</h5>
+                  <h5 class="product-previous-price"><s>${produkt.previousPrice} ${produkt.currency}</s></h5>
                   </div>
                   <div class="product-patterns">
                   ${patternHTML}
@@ -558,8 +586,8 @@ const addTshirts = function (arr) {
                 <div class="product-text-data">
                   <h4 class="product-name">${produkt.shortName}</h4>
                    <div class="product-price">
-                  <h5 class="product-current-price">${produkt.currentPrice}</h5>
-                  <h5 class="product-previous-price"><s>${produkt.previousPrice}</s></h5>
+                  <h5 class="product-current-price">${produkt.currentPrice} ${produkt.currency}</h5>
+                  <h5 class="product-previous-price"><s>${produkt.previousPrice} ${produkt.currency}</s></h5>
                   </div>
                   <div class="product-patterns">
                   ${patternHTML}
