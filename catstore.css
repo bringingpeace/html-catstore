@@ -112,14 +112,6 @@ body {
   display: none;
 }
 /* TOP CONTENT */
-.logo {
-  display: flex;
-  justify-content: flex-start;
-  width: 30%;
-}
-.logo img {
-  height: 16px;
-}
 .top-section {
   width: 100%;
   display: flex;
@@ -140,16 +132,34 @@ body {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+.menu-area {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 7%;
+  height: 100%;
+}
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 35%;
+  height: 100%;
+}
+.logo img {
+  height: 16px;
+}
 .nav-icons {
-  width: 60%;
+  width: 55%;
   height: inherit;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  gap: 0.5rem;
+  gap: 1rem;
+  /* background: red; */
 }
-
 .contrast-slider {
   width: 60px;
   height: 30px;
@@ -181,28 +191,20 @@ body {
   left: calc(100% - 30px);
   background: #1fa9f494;
 }
-.menu-area {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  width: 10%;
-  height: 80px;
-}
 .heart {
   fill: var(--color-svg-ulubione);
-  width: 22px;
-  height: 22px;
+  width: 26px;
+  height: 26px;
 }
 .cart {
   fill: var(--color-svg-cart);
-  width: 22px;
-  height: 22px;
+  width: 26px;
+  height: 26px;
 }
 .account {
   fill: var(--color-svg-account);
-  width: 22px;
-  height: 22px;
+  width: 26px;
+  height: 26px;
 }
 #hamburger {
   color: var(--color-text-primary);
@@ -215,8 +217,8 @@ body {
 #hamburger svg {
   fill: var(--color-svg-icon);
   stroke: var(--color-svg-icon);
-  width: 22px;
-  height: 22px;
+  width: 26px;
+  height: 26px;
 }
 .nav {
   background: #e1d2c987;
