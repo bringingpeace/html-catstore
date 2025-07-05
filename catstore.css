@@ -349,7 +349,7 @@ body {
 .main-label-filter > div {
   background: var(--color-button-background);
   border: 1px solid var(--color-accent);
-  padding: 1rem;
+  /* padding: 1rem; */
   border-radius: var(--global-border-radius);
   display: flex;
   flex-direction: row;
@@ -364,12 +364,13 @@ body {
   padding: 0;
 }
 #filter {
-  height: 40px;
-  width: 25%;
+  height: 36px;
+  width: 20%;
+  padding: 0;
 }
 #sort {
-  height: 40px;
-  width: 35%;
+  height: 36x;
+  width: 30%;
 }
 .product-container-mugs {
   display: grid;
