@@ -161,3 +161,20 @@ window.addEventListener("DOMContentLoaded", function () {
   }
 });
 slider.addEventListener("click", toggleTheme);
+
+//
+//Back to top icon
+const scrollTop = document.querySelector(".back-to-top");
+window.addEventListener("scroll", function () {
+  if (window.scrollY > 400) {
+    scrollTop.classList.add("back-to-top-show");
+  } else {
+    scrollTop.classList.remove("back-to-top-show");
+  }
+});
+scrollTop.addEventListener("click", function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
