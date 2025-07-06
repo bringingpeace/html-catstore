@@ -391,13 +391,13 @@ body {
   padding: 0;
 }
 #filter {
-  height: 36px;
-  width: 20%;
+  height: 40px;
+  width: 25%;
   padding: 0;
 }
 #sort {
-  height: 36x;
-  width: 30%;
+  height: 40x;
+  width: 35%;
 }
 .product-container-mugs {
   display: grid;
