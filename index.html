@@ -28,6 +28,13 @@
   <body>
     <!-- GLOBAL WRAPPER -->
     <div class="global-wrapper">
+      <div class="back-to-top">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+          <path
+            d="m296-224-56-56 240-240 240 240-56 56-184-183-184 183Zm0-240-56-56 240-240 240 240-56 56-184-183-184 183Z"
+          />
+        </svg>
+      </div>
       <!-- TOP SECTION -->
       <section class="top-section">
         <div class="top-content">
@@ -139,7 +146,7 @@
             </div>
 
             <div class="main-label-filter">
-              <div class="filter-layout">
+              <div id="filter" class="filter-layout">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   height="24px"
@@ -166,7 +173,7 @@
                 </svg>
                 <h4 for="sort-icon">układ</h4>
               </div>
-              <div class="">
+              <div id="sort">
                 <h4 for="filter-icon">popularne</h4>
                 <svg
                   id="filter-icon"
