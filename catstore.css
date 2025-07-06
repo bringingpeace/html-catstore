@@ -35,15 +35,16 @@
 html.dark {
   --color-text-primary: #f2e9e4;
   --color-text-secondary: #b8b8b8;
-  --color-top-bottom: #4a4e69;
-  --color-product-area: linear-gradient(
+  --color-top-bottom: #22223b;
+  /* --color-product-area: linear-gradient(
     180deg,
-    hsla(232, 17%, 35%, 1) 0%,
+    hsla(232, 17%, 35%, 1) 0%,s
     hsla(309, 6%, 58%, 1) 100%
-  );
+  ); */
+  --color-product-area: #4a4e69;
   --color-blog-area: #9a8c98;
   --color-charity-area: #c9ada7;
-  --color-footer-area: #4a4e69;
+  --color-footer-area: #22223b;
   --color-button-background: #393956;
   --color-newsletter-background: pink;
   --color-search-input: #f2e9e4;
@@ -54,7 +55,7 @@ html.dark {
   --color-svg-account: #f2e9e4;
   --color-text-current-price: #22223b;
 
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
 }
 /* html.dark {
   --color-text-primary: #ebebeb;
@@ -109,6 +110,32 @@ body {
 }
 .hidden {
   display: none;
+}
+.back-to-top {
+  background: #000;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  position: fixed;
+  z-index: 1500;
+  bottom: 120px;
+  right: -150px;
+  transition: right 0.3s ease, transform 0.15s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.back-to-top:hover {
+  transform: scale(1.1);
+}
+.back-to-top svg {
+  fill: var(--color-accent);
+  width: 28px;
+  height: 28px;
+}
+.back-to-top-show {
+  right: 50px;
 }
 /* TOP CONTENT */
 .top-section {
@@ -645,7 +672,7 @@ h4 {
   margin: 0;
 }
 .separator {
-  background: var(--color-svg);
+  background: var(--color-text-primary);
   width: 50%;
   height: 0.5px;
   margin: 1rem 0rem;
