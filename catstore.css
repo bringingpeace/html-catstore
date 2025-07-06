@@ -118,7 +118,7 @@ body {
   width: 60px;
   position: fixed;
   z-index: 1500;
-  bottom: 120px;
+  bottom: 15svh;
   right: -150px;
   transition: right 0.3s ease, transform 0.15s ease;
   display: flex;
