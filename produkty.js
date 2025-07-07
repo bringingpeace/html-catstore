@@ -528,7 +528,7 @@ const addMugs = function (arr) {
                   <h5 class="product-current-price">${produkt.currentPrice} ${produkt.currency}</h5>
                   <h5 class="product-previous-price"><s>${produkt.previousPrice} ${produkt.currency}</s></h5>
                   </div>
-                  
+                  <h5 class="product-amount">Pozostało sztuk: ${produkt.amount}</h5>
                 </div>
               </div>
             </div>
@@ -553,14 +553,15 @@ const addMerch = function (arr) {
               <img class="product-image" src="${produkt.images[0]}" alt="" />
               <div class="product-data">
                 <div class="product-text-data">
-                  <h4 class="product-name">${produkt.shortName}</h4>
-                   <div class="product-price">
+                <div class="product-patterns">
+                  ${patternHTML}
+                  </div>
+                  <h4 class="product-name">${produkt.shortName}</h4> 
+                  <div class="product-price">
                   <h5 class="product-current-price">${produkt.currentPrice} ${produkt.currency}</h5>
                   <h5 class="product-previous-price"><s>${produkt.previousPrice} ${produkt.currency}</s></h5>
                   </div>
-                  <div class="product-patterns">
-                  ${patternHTML}
-                  </div>
+                  <h5 class="product-amount">Pozostało sztuk: ${produkt.amount}</h5>
                 </div>
               </div>
             </div>
@@ -581,18 +582,19 @@ const addTshirts = function (arr) {
           .join("")
       : "";
     const productHTML = `
-     <div class="product">
+    <div class="product">
               <img class="product-image" src="${produkt.images[0]}" alt="" />
               <div class="product-data">
                 <div class="product-text-data">
-                  <h4 class="product-name">${produkt.shortName}</h4>
-                   <div class="product-price">
+                <div class="product-patterns">
+                  ${patternHTML}
+                  </div>
+                  <h4 class="product-name">${produkt.shortName}</h4> 
+                  <div class="product-price">
                   <h5 class="product-current-price">${produkt.currentPrice} ${produkt.currency}</h5>
                   <h5 class="product-previous-price"><s>${produkt.previousPrice} ${produkt.currency}</s></h5>
                   </div>
-                  <div class="product-patterns">
-                  ${patternHTML}
-                  </div>
+                  <h5 class="product-amount">Pozostało sztuk: ${produkt.amount}</h5>
                 </div>
               </div>
             </div>
