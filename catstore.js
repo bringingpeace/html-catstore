@@ -46,7 +46,6 @@ html.addEventListener("click", function (event) {
     mobileNav.classList.contains("active")
   ) {
     mobileNav.classList.remove("active");
-
     mobileMenuSwitch1.forEach(function (svg) {
       svg.classList.toggle("hidden");
     });
@@ -65,26 +64,26 @@ const productContainerTshirts = document.querySelector(
 const productImage = document.querySelectorAll(".product-image");
 
 //Zmiana layoutu produktów 1->2<-1
-layoutButton.addEventListener("click", function () {
-  layoutIcon.forEach(function (icon) {
-    icon.classList.toggle("hidden");
-  });
+// layoutButton.addEventListener("click", function () {
+//   layoutIcon.forEach(function (icon) {
+//     icon.classList.toggle("hidden");
+//   });
 
-  productContainerMugs?.classList.toggle("switchLayout");
-  productImage.forEach(function (image) {
-    image.classList.toggle("imageSingleLayout");
-  });
+//   productContainerMugs?.classList.toggle("switchLayout");
+//   productImage.forEach(function (image) {
+//     image.classList.toggle("imageSingleLayout");
+//   });
 
-  productContainerMerch?.classList.toggle("switchLayout");
-  productImage.forEach(function (image) {
-    image.classList.toggle("imageSingleLayout");
-  });
+//   productContainerMerch?.classList.toggle("switchLayout");
+//   productImage.forEach(function (image) {
+//     image.classList.toggle("imageSingleLayout");
+//   });
 
-  productContainerTshirts?.classList.toggle("switchLayout");
-  productImage.forEach(function (image) {
-    image.classList.toggle("imageSingleLayout");
-  });
-});
+//   productContainerTshirts?.classList.toggle("switchLayout");
+//   productImage.forEach(function (image) {
+//     image.classList.toggle("imageSingleLayout");
+//   });
+// });
 
 //Zmiana trybu jasności
 const switcher = document.querySelector(".contrast-pin");
@@ -107,7 +106,7 @@ function toggleTheme() {
     ? (logo.innerHTML =
         '<img class="logo-dark-theme" src="logo-dark-theme.png" alt="" />')
     : (logo.innerHTML =
-        '<img class="logo-light-theme" src="logo-light-theme.png" alt="" />');
+        '<img class="logo-light-theme" src="logo-dark-theme.png" alt="" />');
   // logoLightTheme.classList.toggle("hidden", isDark);
   // logoDarkTheme.classList.toggle("hidden", !isDark);
 
@@ -141,7 +140,7 @@ window.addEventListener("DOMContentLoaded", function () {
     });
   } else {
     logo.innerHTML =
-      '<img class="logo-light-theme" src="logo-light-theme.png" alt="" />';
+      '<img class="logo-light-theme" src="logo-dark-theme.png" alt="" />';
   }
 });
 slider.addEventListener("click", toggleTheme);
@@ -162,3 +161,36 @@ scrollTop.addEventListener("click", function () {
     behavior: "smooth",
   });
 });
+
+//add dropshadow after scroll for top nav
+const topNav = document.querySelector(".top-section");
+window.addEventListener("scroll", function (e) {
+  if (window.scrollY > 50) {
+    topNav.style.boxShadow = "0px 1px 5px rgba(0,0,0,0.548)";
+  } else {
+    topNav.style.boxShadow = "";
+  }
+});
+
+//sort dropdown button ux
+const sortButtonContent = document.querySelector(".sortButton-dropdown");
+const sortButton = document.querySelector(".sortButton-head");
+const sortButtonSVG = document.getElementById("filter-icon");
+
+sortButton.addEventListener("click", function () {
+  sortButtonContent.classList.toggle("addDisplayBlock");
+  sortButtonSVG.classList.toggle("sortButton-head-active");
+});
+
+html.addEventListener("click", function (e) {
+  if (
+    !sortButton.contains(e.target) &&
+    !sortButtonContent.contains(e.target) &&
+    sortButtonContent.classList.contains("addDisplayBlock")
+  ) {
+    sortButtonContent.classList.remove("addDisplayBlock");
+    sortButtonSVG.classList.toggle("sortButton-head-active");
+  }
+});
+
+//karuzelka
