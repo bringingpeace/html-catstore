@@ -27,22 +27,6 @@ ulubioneWrapper.forEach(function (wrapper) {
   });
 });
 
-const kontaktButton = document.getElementById("kontakt-link");
-const sklepButton = document.getElementById("sklep-link");
-// sklepButton.addEventListener("click", function (e) {
-//   e.preventDefault(),
-//     document
-//       .querySelector(".mid-section")
-//       .scrollIntoView({ behavior: "smooth" });
-// });
-
-// kontaktButton.addEventListener("click", function (e) {
-//   e.preventDefault();
-//   document
-//     .querySelector(".details-section")
-//     .scrollIntoView({ behavior: "smooth" });
-// });
-
 const mobileMenuSwitch = document.getElementById("hamburger");
 const mobileMenuSwitch1 = document.querySelectorAll("#hamburger svg");
 const mobileNav = document.querySelector(".nav");
