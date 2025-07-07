@@ -492,8 +492,8 @@ const wszystkieProdukty = [...kubki, ...bluzy, ...koszulki];
 const nameShortener = function (arr) {
   arr.forEach(function (element) {
     const imie = element.name;
-    const shortName = imie.slice(0, 26);
-    return (element.shortName = shortName);
+    const shortName = imie.slice(0, 15);
+    return (element.shortName = shortName + "...");
   });
 };
 nameShortener(kubki);
@@ -520,14 +520,15 @@ const addMugs = function (arr) {
               <img class="product-image" src="${produkt.images[0]}" alt="" />
               <div class="product-data">
                 <div class="product-text-data">
+                <div class="product-patterns">
+                  ${patternHTML}
+                  </div>
                   <h4 class="product-name">${produkt.shortName}</h4> 
                   <div class="product-price">
                   <h5 class="product-current-price">${produkt.currentPrice} ${produkt.currency}</h5>
                   <h5 class="product-previous-price"><s>${produkt.previousPrice} ${produkt.currency}</s></h5>
                   </div>
-                  <div class="product-patterns">
-                  ${patternHTML}
-                  </div>
+                  
                 </div>
               </div>
             </div>
