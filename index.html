@@ -142,10 +142,24 @@
         <div class="mid-content">
           <div class="main-label">
             <div class="main-label-text">
+              <h6>Strona główna > kubki z nadrukiem</h6>
               <h3>Kubki z nadrukiem</h3>
             </div>
 
             <div class="main-label-filter">
+              <div id="sort">
+                <h4 for="filter-icon">popularne</h4>
+                <svg
+                  id="filter-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24px"
+                  viewBox="0 -960 960 960"
+                  width="24px"
+                  fill="#000"
+                >
+                  <path d="M480-360 280-560h400L480-360Z" />
+                </svg>
+              </div>
               <div id="filter" class="filter-layout">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -173,19 +187,6 @@
                 </svg>
                 <h4 for="sort-icon">układ</h4>
               </div>
-              <div id="sort">
-                <h4 for="filter-icon">popularne</h4>
-                <svg
-                  id="filter-icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="24px"
-                  viewBox="0 -960 960 960"
-                  width="24px"
-                  fill="#000"
-                >
-                  <path d="M480-360 280-560h400L480-360Z" />
-                </svg>
-              </div>
             </div>
           </div>
 
@@ -207,20 +208,19 @@
           </div>
         </div>
       </section>
-      <!-- DETAILS SECTION -->
-      <section class="details-section">
-        <div class="details-content">
-          <div class="news">
-            <h4>Drugi kubek gratis. Dołącz do kociego klubu!</h4>
-            <form action="https://api.web3forms.com/submit" method="POST">
-              <input
-                type="hidden"
-                name="access_key"
-                value="72b7cd45-68b6-402b-95ec-1822882783af"
-              />
-              <input type="name" name="name" placeholder="Imię" required />
-              <input type="email" name="email" placeholder="Adres e-mail" />
-              <!-- <textarea
+      <!-- NEWSLETTER SECTION -->
+      <section class="newsletter-section">
+        <div class="news">
+          <h2>Dołącz do kociego klubu!</h2>
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input
+              type="hidden"
+              name="access_key"
+              value="72b7cd45-68b6-402b-95ec-1822882783af"
+            />
+            <input type="name" name="name" placeholder="Imię" required />
+            <input type="email" name="email" placeholder="Adres e-mail" />
+            <!-- <textarea
                   name="message"
                   placeholder="Twoja wiadomość"
                   required
@@ -236,9 +236,13 @@
                   name="redirect"
                   value="https://moja stronka z podziękowaniem"
                 /> -->
-            </form>
-            <button>Dołącz teraz</button>
-          </div>
+          </form>
+          <button>Dołącz teraz</button>
+        </div>
+      </section>
+      <!-- BLOG SECTION -->
+      <section class="details-section">
+        <div class="details-content">
           <div class="blog-info1">
             <div class="blog-text">
               <p>Czym karmić młode kociaki?</p>
@@ -256,14 +260,14 @@
       <!-- FOOTER SECTION -->
       <section class="footer-section">
         <div class="footer-content">
-          <div class="store-info">
+          <!-- <div class="store-info">
             <p>😸❤️</p>
             <p>
               Sklep o charakterze charytatywnym. Co kwartał przekazujemy 50%
               naszych przychodów dla kociego schroniska, wybranego przez naszych
               klientów.
             </p>
-          </div>
+          </div> -->
 
           <div class="store-details">
             <h2>Kontakt</h2>
