@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="catstore.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Potta+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="../canva/uni-logo.png" />
+    <title>🐈 Karta produktu</title>
+    <link rel="icon" type="image/x-icon" href="uni-logo.png" />
+  </head>
+  <body>
+    <!-- GLOBAL WRAPPER -->
+    <div class="global-wrapper">
+      <div class="back-to-top">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+          <path
+            d="m296-224-56-56 240-240 240 240-56 56-184-183-184 183Zm0-240-56-56 240-240 240 240-56 56-184-183-184 183Z"
+          />
+        </svg>
+      </div>
+      <!-- TOP SECTION -->
+      <section class="top-section">
+        <div class="top-content">
+          <div class="menu-area">
+            <div id="hamburger">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 -960 960 960"
+                class="hidden"
+              >
+                <path
+                  d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                stroke="#000"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M4 12h16" />
+                <path d="M4 18h16" />
+                <path d="M4 6h16" />
+              </svg>
+            </div>
+          </div>
+
+          <div class="logo">
+            <!-- <img class="logo-light-theme" src="logo-light-theme.png" alt="" /> -->
+            <!-- <img class="logo-dark-theme" src="logo-dark-theme.png" alt="" /> -->
+          </div>
+
+          <nav class="nav">
+            <ul>
+              <li><a href="index.html">Kubki z nadrukiem kota</a></li>
+              <li><a href="bluzy.html">Kocie bluzy</a></li>
+              <li><a href="koszulki.html">Kocie koszulki</a></li>
+            </ul>
+          </nav>
+
+          <div class="nav-icons">
+            <div class="nav-icons-icon heart">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                class="icon icon-tabler icons-tabler-filled icon-tabler-heart"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M6.979 3.074a6 6 0 0 1 4.988 1.425l.037 .033l.034 -.03a6 6 0 0 1 4.733 -1.44l.246 .036a6 6 0 0 1 3.364 10.008l-.18 .185l-.048 .041l-7.45 7.379a1 1 0 0 1 -1.313 .082l-.094 -.082l-7.493 -7.422a6 6 0 0 1 3.176 -10.215z"
+                />
+              </svg>
+            </div>
+
+            <div class="nav-icons-icon cart">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                <path
+                  d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"
+                />
+              </svg>
+            </div>
+
+            <div class="nav-icons-icon account">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path
+                  d="M399 384.2C376.9 345.8 335.4 320 288 320l-64 0c-47.4 0-88.9 25.8-111 64.2c35.2 39.2 86.2 63.8 143 63.8s107.8-24.7 143-63.8zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm256 16a72 72 0 1 0 0-144 72 72 0 1 0 0 144z"
+                />
+              </svg>
+            </div>
+
+            <div class="contrast-slider">
+              <div class="contrast-pin"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SEARCH SECTION -->
+      <section class="search-section">
+        <form class="search-form">
+          <div class="search-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26px"
+              viewBox="0 -960 960 960"
+              width="26px"
+              fill="#00000060"
+            >
+              <path
+                d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"
+              />
+            </svg>
+          </div>
+          <input
+            type="search"
+            id="search-input"
+            name="q"
+            placeholder="Wyszukaj produkt"
+          />
+        </form>
+      </section>
+
+      <!-- PRODUCT CARD -->
+      <div class="dataFlow"></div>
+      <div class="productCard-wrapper">
+        <!--  -->
+        <div class="productCard-productData">
+          <div class="productCard-mainImage" dir="ltr">
+            <img src="KUBKI/5.1.jpg" alt="" />
+            <img src="KUBKI/5.2.jpg" alt="" />
+            <img src="KUBKI/5.3.jpg" alt="" />
+          </div>
+        </div>
+        <!--  -->
+      </div>
+      <!-- PRODUCT CARD -->
+
+      <!-- FAQ section -->
+      <section class="faq-section"></section>
+      <!-- FOOTER SECTION -->
+      <section class="footer-section">
+        <div class="footer-content">
+          <!-- <div class="store-info">
+            <p>😸❤️</p>
+            <p>
+              Sklep o charakterze charytatywnym. Co kwartał przekazujemy 50%
+              naszych przychodów dla kociego schroniska, wybranego przez naszych
+              klientów.
+            </p>
+          </div> -->
+
+          <div class="store-details">
+            <h2>Kontakt</h2>
+            <h4>tel.: 888-222-555</h4>
+            <h4>catstore@cat.lovers</h4>
+            <h4>Białystok, 15-345</h4>
+            <h4>Sezamkowa 41</h4>
+            <span class="separator"></span>
+            <a>O nas</a>
+            <a>Kocie kubki</a>
+            <a>Koci bluzy</a>
+            <a>Kocie koszulki</a>
+            <a>Produkty ulubione</a>
+            <a>Twój koszyk</a>
+            <span class="separator"></span>
+            <a>Regulamin sklepu</a>
+            <a>Płatności i zwroty</a>
+            <a>Pomoc w zakupach</a>
+            <span class="separator"></span>
+          </div>
+
+          <div class="sm">
+            <div class="sm-svg">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="bi bi-github"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
+                />
+              </svg>
+            </div>
+            <!-- <div class="sm-svg">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="bi bi-youtube"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"
+                />
+              </svg>
+            </div> -->
+            <div class="sm-svg">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="bi bi-linkedin"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
+                />
+              </svg>
+            </div>
+            <div class="sm-svg"></div>
+          </div>
+          <div class="thank-you">
+            Projekt przeznaczony tylko i wyłącznie do celów prezentacyjnych.<br />
+            Jeśli podoba Ci się to co widzisz i chcesz podjąć wspólpracę, napisz
+            do mnie maila: cratoesx@gmail.com<br />
+            <br />
+            Copyright by Jakub Sokołowski. 2025
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="produkty.js"></script>
+    <!-- <script src="renderProduct.js"></script> -->
+    <script src="catstore.js"></script>
+  </body>
+</html>
