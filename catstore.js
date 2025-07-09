@@ -177,20 +177,20 @@ const sortButtonContent = document.querySelector(".sortButton-dropdown");
 const sortButton = document.querySelector(".sortButton-head");
 const sortButtonSVG = document.getElementById("filter-icon");
 
-sortButton.addEventListener("click", function () {
+sortButton?.addEventListener("click", function () {
   sortButtonContent.classList.toggle("addDisplayBlock");
   sortButtonSVG.classList.toggle("sortButton-head-active");
 });
-
-html.addEventListener("click", function (e) {
-  if (
-    !sortButton.contains(e.target) &&
-    !sortButtonContent.contains(e.target) &&
-    sortButtonContent.classList.contains("addDisplayBlock")
-  ) {
-    sortButtonContent.classList.remove("addDisplayBlock");
-    sortButtonSVG.classList.toggle("sortButton-head-active");
-  }
-});
-
+if (sortButton) {
+  html.addEventListener("click", function (e) {
+    if (
+      !sortButton.contains(e.target) &&
+      !sortButtonContent.contains(e.target) &&
+      sortButtonContent.classList.contains("addDisplayBlock")
+    ) {
+      sortButtonContent.classList.remove("addDisplayBlock");
+      sortButtonSVG.classList.toggle("sortButton-head-active");
+    }
+  });
+}
 //karuzelka
