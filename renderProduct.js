@@ -7,15 +7,128 @@ const clickedProduct = kubki.find(function (kubek) {
   return kubek.id === Number(transferedId);
 });
 //Renderuje produkt jeśli przekazane id znalazło swój obiekt
-// if (clickedProduct) {
-//   renderProduct(clickedProduct);
-// }
-// function renderProduct(product) {
-//   const dataFlow = document.querySelector(".dataFlow");
-//   dataFlow.innerHTML = `
+if (clickedProduct) {
+  renderProduct(clickedProduct);
+}
+function renderProduct() {
+  const globalProductCard = document.querySelector(".globalProductCard");
 
-//   `;
-// }
+  const renderImages = clickedProduct.images;
+  const zdjecia = renderImages
+    .map(function (image) {
+      return ` <img src="${image}" alt="" />`;
+    })
+    .join("");
+
+  globalProductCard.innerHTML = `
+
+     <div class="productSource">
+          <p>Strona główna > Kubki z nadrukiem > ${clickedProduct.name}</p>
+        </div>
+        <div class="product-global-wrapper">
+          <div class="productCard-image-wrapper">
+            <div class="productCard-mainImage" dir="ltr">
+              ${zdjecia}
+            </div>
+          </div>
+
+          <div class="productCard-textData-wrapper">
+            <div class="productCard-textData">
+              <p class="productCard-name">${clickedProduct.name}</p>
+              <p class="productCard-currentPrice">${clickedProduct.currency} ${clickedProduct.currentPrice}</p>
+              <p class="productCard-previousPrice"><s>${clickedProduct.currency} ${clickedProduct.previousPrice}</s></p>
+              <p class="productCard-omnibus">
+                Najniższa cena tego produktu w ostatnich 30 dniach: ${clickedProduct.currency} ${clickedProduct.previousPrice}
+              </p>
+              <p class="productCard-amount">Pozostało sztuk: ${clickedProduct.amount}</p>
+            </div>
+          </div>
+
+          <div class="productAmount-wrapper">
+            <input type="number" />
+            <button class="addToCartButton">Dodaj do koszyka</button>
+          </div>
+
+          <div class="accordeons-wrapper">
+            <div class="productCard-accordeon">
+              <div
+                class="productCard-accordeon-header"
+                role="button"
+                tabindex="0"
+                aria-expanded="false"
+                aria-controls="product-description"
+              >
+                Opis produktu
+                <div class="productCard-accordeon-iconContainer">
+                  <div class="productCard-accordeon-iconContainer1"></div>
+                  <div class="productCard-accordeon-iconContainer2"></div>
+                </div>
+              </div>
+              <div
+                class="productCard-accordeon-content"
+                id="product-description"
+              >
+                <div class="content-in">
+                  ${clickedProduct.description}
+                </div>
+              </div>
+            </div>
+
+            <div class="productCard-accordeon">
+              <div
+                class="productCard-accordeon-header"
+                role="button"
+                tabindex="0"
+                aria-expanded="false"
+                aria-controls="product-description2"
+              >
+                Waga i wymiary
+                <div class="productCard-accordeon-iconContainer">
+                  <div class="productCard-accordeon-iconContainer1"></div>
+                  <div class="productCard-accordeon-iconContainer2"></div>
+                </div>
+              </div>
+              <div
+                class="productCard-accordeon-content"
+                id="product-description2"
+              >
+                <div class="content-in">
+                  <span style="font-weight: 600"> Height</span>: ${clickedProduct.height},<br />
+                  <span style="font-weight: 600"> Diameter</span>: ${clickedProduct.diameter},<br />
+                  <span style="font-weight: 600"> Weight:</span> ${clickedProduct.weight},<br />
+                  <span style="font-weight: 600"> Capacity:</span> ${clickedProduct.capacity},
+                </div>
+              </div>
+            </div>
+
+            <div class="productCard-accordeon">
+              <div
+                class="productCard-accordeon-header"
+                role="button"
+                tabindex="0"
+                aria-expanded="false"
+                aria-controls="product-description3"
+              >
+                Skład
+                <div class="productCard-accordeon-iconContainer">
+                  <div class="productCard-accordeon-iconContainer1"></div>
+                  <div class="productCard-accordeon-iconContainer2"></div>
+                </div>
+              </div>
+              <div
+                class="productCard-accordeon-content"
+                id="product-description3"
+              >
+                <div class="content-in">
+                  ${clickedProduct.composition}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+  `;
+}
 //Akordeony pod produktem
 const akordeony = document.querySelectorAll(".productCard-accordeon-header");
 akordeony.forEach(function (akordeon) {
