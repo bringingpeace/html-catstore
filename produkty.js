@@ -214,7 +214,7 @@ const kubki = [
 
 const bluzy = [
   {
-    id: 1,
+    id: 13,
     name: "Bluza ze śpiącym Mruczkiem",
     currentPrice: 21.5,
     previousPrice: 26.99,
@@ -231,7 +231,7 @@ const bluzy = [
   },
 
   {
-    id: 2,
+    id: 14,
     name: "Bluza z bajecznym kotkiem",
     currentPrice: 25.5,
     previousPrice: 24.99,
@@ -252,7 +252,7 @@ const bluzy = [
   },
 
   {
-    id: 3,
+    id: 15,
     name: "Bluza ze słodkim buraskiem",
     currentPrice: 25.5,
     previousPrice: 27.25,
@@ -268,7 +268,7 @@ const bluzy = [
   },
 
   {
-    id: 4,
+    id: 16,
     name: "Bluza z ucinającym sobie drzemkę kotem na laptopie",
     currentPrice: 28.5,
     previousPrice: 28.5,
@@ -284,7 +284,7 @@ const bluzy = [
   },
 
   {
-    id: 5,
+    id: 17,
     name: "Bluza z uroczym kociakiem",
     currentPrice: 22.25,
     previousPrice: 23.5,
@@ -300,7 +300,7 @@ const bluzy = [
   },
 
   {
-    id: 6,
+    id: 18,
     name: "Bluza z przyjaciółmi",
     currentPrice: 26.5,
     previousPrice: 25.5,
@@ -316,7 +316,7 @@ const bluzy = [
   },
 
   {
-    id: 7,
+    id: 19,
     name: "Bluza z rozbrykanym kotkiem",
     currentPrice: 22.5,
     previousPrice: 25.5,
@@ -332,7 +332,7 @@ const bluzy = [
   },
 
   {
-    id: 8,
+    id: 20,
     name: "Bluza z kotem ogrodnika",
     currentPrice: 24.5,
     previousPrice: 25.5,
@@ -348,7 +348,7 @@ const bluzy = [
   },
 
   {
-    id: 9,
+    id: 21,
     name: "Bluza z puszystym kotkiem",
     currentPrice: 24.5,
     previousPrice: 25.5,
@@ -366,7 +366,7 @@ const bluzy = [
 
 const koszulki = [
   {
-    id: 1,
+    id: 22,
     name: "Koszulka z białym futrzakiem",
     currentPrice: 25.5,
     previousPrice: 27.25,
@@ -381,7 +381,7 @@ const koszulki = [
     images: ["../ai/UBRANIA/KOSZULKI/1.jpg"],
   },
   {
-    id: 2,
+    id: 23,
     name: "Top - Chodź się PSItul",
     currentPrice: 25.5,
     previousPrice: 27.25,
@@ -396,7 +396,7 @@ const koszulki = [
     images: ["../ai/UBRANIA/KOSZULKI/2.jpg"],
   },
   {
-    id: 3,
+    id: 24,
     name: "Koszulka z kocią rodzinką",
     currentPrice: 15.85,
     previousPrice: 23.25,
@@ -411,7 +411,7 @@ const koszulki = [
     images: ["../ai/UBRANIA/KOSZULKI/3.jpg"],
   },
   {
-    id: 4,
+    id: 25,
     name: "Koszulka z trzema łobuzami",
     currentPrice: 17.5,
     previousPrice: 20.4,
@@ -426,7 +426,7 @@ const koszulki = [
     images: ["../ai/UBRANIA/KOSZULKI/4.jpg"],
   },
   {
-    id: 5,
+    id: 26,
     name: "Koszulka/Top dla gamera",
     currentPrice: 10.7,
     previousPrice: 12.45,
@@ -441,7 +441,7 @@ const koszulki = [
     images: ["../ai/UBRANIA/KOSZULKI/5.jpg"],
   },
   {
-    id: 6,
+    id: 27,
     name: "Koszulka/Top ze śpioszkami",
     currentPrice: 8,
     previousPrice: 15.25,
@@ -456,7 +456,7 @@ const koszulki = [
     images: ["../ai/UBRANIA/KOSZULKI/6.jpg"],
   },
   {
-    id: 7,
+    id: 28,
     name: "Top z kotem kanapowcem",
     currentPrice: 15.5,
     previousPrice: 10,
@@ -471,7 +471,7 @@ const koszulki = [
     images: ["../ai/UBRANIA/KOSZULKI/7.jpg"],
   },
   {
-    id: 8,
+    id: 29,
     name: "Top z głodnym kotem",
     currentPrice: 17.5,
     previousPrice: 9,
