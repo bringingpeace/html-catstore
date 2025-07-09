@@ -147,18 +147,145 @@
       </section>
 
       <!-- PRODUCT CARD -->
-      <div class="dataFlow"></div>
-      <div class="productCard-wrapper">
-        <!--  -->
-        <div class="productCard-productData">
+      <!--  -->
+      <div class="productSource">
+        <p>Strona główna > Kubki z nadrukiem > Obecny produkt</p>
+      </div>
+      <div class="product-global-wrapper">
+        <div class="productCard-image-wrapper">
           <div class="productCard-mainImage" dir="ltr">
             <img src="KUBKI/5.1.jpg" alt="" />
             <img src="KUBKI/5.2.jpg" alt="" />
             <img src="KUBKI/5.3.jpg" alt="" />
           </div>
         </div>
-        <!--  -->
+
+        <div class="productCard-textData-wrapper">
+          <div class="productCard-textData">
+            <p class="productCard-name">Kubek z poranną kawusią</p>
+            <p class="productCard-currentPrice">PLN 23.50</p>
+            <p class="productCard-previousPrice"><s>PLN 27.25</s></p>
+            <p class="productCard-omnibus">
+              Najniższa cena tego produktu w ostatnich 30 dniach: PLN 27.25
+            </p>
+            <p class="productCard-amount">Pozostało sztuk: 12</p>
+          </div>
+        </div>
+
+        <!-- <div class="productCard-summary-wrapper">
+          <div class="amountCounter-wrapper">
+            <div class="amountCounter-icon-wrapper">
+              <div class="more">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24px"
+                  viewBox="0 -960 960 960"
+                  width="24px"
+                  fill="#000000"
+                >
+                  <path d="m280-400 200-200 200 200H280Z" />
+                </svg>
+              </div>
+              <div class="less">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24px"
+                  viewBox="0 -960 960 960"
+                  width="24px"
+                  fill="#000000"
+                >
+                  <path d="M480-360 280-560h400L480-360Z" />
+                </svg>
+              </div>
+            </div>
+            <div class="numDisplay"></div>
+          </div>
+          <button class="addToCartButton">Dodaj do koszyka</button>
+        </div> -->
+
+        <div class="productAmount-wrapper">
+          <input type="number" />
+          <button class="addToCartButton">Dodaj do koszyka</button>
+        </div>
+
+        <div class="accordeons-wrapper">
+          <div class="productCard-accordeon">
+            <div
+              class="productCard-accordeon-header"
+              role="button"
+              tabindex="0"
+              aria-expanded="false"
+              aria-controls="product-description"
+            >
+              Opis produktu
+              <div class="productCard-accordeon-iconContainer">
+                <div class="productCard-accordeon-iconContainer1"></div>
+                <div class="productCard-accordeon-iconContainer2"></div>
+              </div>
+            </div>
+            <div class="productCard-accordeon-content" id="product-description">
+              <div class="content-in">
+                Piękny i wesoły kubek z kotem pijącym kawusię w roli głównej. To
+                kubek dla prawdziwego smakosza kawy. Został wykonany z wysokiej
+                jakości porcelany. Jest on świetnym pomysłem na prezent.
+              </div>
+            </div>
+          </div>
+
+          <div class="productCard-accordeon">
+            <div
+              class="productCard-accordeon-header"
+              role="button"
+              tabindex="0"
+              aria-expanded="false"
+              aria-controls="product-description2"
+            >
+              Waga i wymiary
+              <div class="productCard-accordeon-iconContainer">
+                <div class="productCard-accordeon-iconContainer1"></div>
+                <div class="productCard-accordeon-iconContainer2"></div>
+              </div>
+            </div>
+            <div
+              class="productCard-accordeon-content"
+              id="product-description2"
+            >
+              <div class="content-in">
+                <span style="font-weight: 600"> height</span>: "16cm",<br />
+                <span style="font-weight: 600"> diameter</span>: "8,4cm",<br />
+                <span style="font-weight: 600"> weight:</span> "0,34kg",
+              </div>
+            </div>
+          </div>
+
+          <div class="productCard-accordeon">
+            <div
+              class="productCard-accordeon-header"
+              role="button"
+              tabindex="0"
+              aria-expanded="false"
+              aria-controls="product-description3"
+            >
+              Skład
+              <div class="productCard-accordeon-iconContainer">
+                <div class="productCard-accordeon-iconContainer1"></div>
+                <div class="productCard-accordeon-iconContainer2"></div>
+              </div>
+            </div>
+            <div
+              class="productCard-accordeon-content"
+              id="product-description3"
+            >
+              <div class="content-in">
+                <span style="font-weight: 600"> 80% </span>Porcelana<br />
+                <span style="font-weight: 600"> 20% </span>Glina
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+      <!--  -->
+
       <!-- PRODUCT CARD -->
 
       <!-- FAQ section -->
@@ -243,7 +370,7 @@
     </div>
 
     <script src="produkty.js"></script>
-    <!-- <script src="renderProduct.js"></script> -->
+    <script src="renderProduct.js"></script>
     <script src="catstore.js"></script>
   </body>
 </html>
