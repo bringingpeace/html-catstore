@@ -517,7 +517,7 @@ const addMugs = function (arr) {
       : "";
     const productHTML = `
     <div class="product">
-              <img class="product-image" src="${produkt.images[0]}" alt="" />
+              <img class="product-image" src="${produkt.images[0]}" data-id="${produkt.id}" alt="" />
               <div class="product-data">
                 <div class="product-text-data">
                 <div class="product-patterns">
@@ -549,8 +549,8 @@ const addMerch = function (arr) {
           .join("")
       : "";
     const productHTML = `
-    <div class="product">
-              <img class="product-image" src="${produkt.images[0]}" alt="" />
+    <div class="product" >
+              <img class="product-image" src="${produkt.images[0]}" data-id="${produkt.id}" alt="" />
               <div class="product-data">
                 <div class="product-text-data">
                 <div class="product-patterns">
@@ -582,8 +582,8 @@ const addTshirts = function (arr) {
           .join("")
       : "";
     const productHTML = `
-    <div class="product">
-              <img class="product-image" src="${produkt.images[0]}" alt="" />
+     <div class="product">
+              <img class="product-image" src="${produkt.images[0]}" data-id="${produkt.id}" alt="" />
               <div class="product-data">
                 <div class="product-text-data">
                 <div class="product-patterns">
@@ -608,3 +608,11 @@ if (productAreaMugs) addMugs(kubki);
 if (productAreaMerch) addMerch(bluzy);
 
 if (productAreaTshirts) addTshirts(koszulki);
+
+document.querySelectorAll(".product-image").forEach(function (productCard) {
+  productCard.addEventListener("click", function () {
+    const productId = productCard.dataset.id;
+    localStorage.setItem("selectedProductId", productId);
+    window.location.href = "productPage.html";
+  });
+});
