@@ -3,8 +3,8 @@
 //Odczytuje ID produktu z localStorage
 const transferedId = localStorage.getItem("selectedProductId");
 //Szukam produktu z takim samym ID jak przechowane w localStorage
-const clickedProduct = kubki.find(function (kubek) {
-  return kubek.id === Number(transferedId);
+const clickedProduct = wszystkieProdukty.find(function (produkt) {
+  return produkt.id === Number(transferedId);
 });
 //Renderuje produkt jeśli przekazane id znalazło swój obiekt
 if (clickedProduct) {
@@ -178,49 +178,20 @@ amountNum.value = 1;
 
 amountNum.addEventListener("input", function () {
   if (amountNum.value < 1) {
-    amountNum.value = 1;
+    // amountNum.value = 1;
     amountNum.classList.toggle("amountError");
+    amountNum.style.border = "3px solid red";
   }
   if (amountNum.value > 1 && amountNum.value < maxAmount) {
+    amountNum.style.border = "";
   }
   if (amountNum.value > maxAmount) {
-    amountNum.value = maxAmount;
+    // amountNum.value = maxAmount;
     amountNum.classList.toggle("amountError");
+    amountNum.style.border = "3px solid red";
   }
 });
 
-// numDisplay.textContent = 1;
-
-// more.addEventListener("click", function (e) {
-//   numDisplay.textContent++;
-
-//   if (numDisplay.textContent > maxAmount) {
-//     numDisplay.style.background = "red";
-//     numDisplay.textContent = maxAmount;
-//   }
-//   if (numDisplay.textContent > 1 && numDisplay.textContent < maxAmount) {
-//     numDisplay.style.background = "#fff";
-//   }
-// });
-
-// less.addEventListener("click", function (e) {
-//   numDisplay.textContent--;
-
-//   if (numDisplay.textContent < 1) {
-//     numDisplay.style.background = "red";
-//     numDisplay.textContent = 1;
-//   }
-//   if (numDisplay.textContent > 1 && numDisplay.textContent < maxAmount) {
-//     numDisplay.style.background = "#fff";
-//   }
-// });
-
-//Zapisuję wybraną ilość podczas dodawania do koszyka
-// const addToCart = document.querySelector(".addToCartButton");
-// addToCart.addEventListener("click", function () {
-//   const selectedAmount = numDisplay.textContent;
-//   console.log(selectedAmount);
-// });
 const addToCart = document.querySelector(".addToCartButton");
 addToCart.addEventListener("click", function () {
   const selectedAmount = amountNum.value;
