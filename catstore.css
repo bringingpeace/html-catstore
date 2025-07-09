@@ -1,18 +1,4 @@
-/* :root {
-  --main-text: #000000;
-  --second-text: #978978;
-  --background-nav: #d8d2c2;
-  --color-form: #5e5549;
-  --background-products: #faf7f0;
-  --color-svg: #393e46;
-  --color-accent: #ffffff;
-  --global-text: 1rem;
-  --global-medium-text: 1.2rem;
-  --global-big-text: 1.5rem;
-  --global-border-radius: 30px;
-} */
 :root {
-  /* --main-text: #583101; */
   --main-text: #000;
   --second-text: #9a9a9a;
 
@@ -21,8 +7,7 @@
   --button-text: #583101;
   --color-search-input: #ffffff;
 
-  --background-nav: #ccbeb8;
-  /* --background-products: #e8e8e4; */
+  --background-nav: #dd8871;
   --background-products: #ffffff;
   --background-newsletter: #f4f3ee;
   --background-blog: #e8e8e4;
@@ -31,10 +16,10 @@
   --main-text-footer: #ffffff;
   --footer-text: #c9c9c9;
 
-  --color-svg-icon: #f4f3ee;
-  --color-svg-ulubione: #e0afa0;
-  --color-svg-cart: #f4f3ee;
-  --color-svg-account: #f4f3ee;
+  --color-svg-icon: #ffffff;
+  --color-svg-ulubione: #ffffff;
+  --color-svg-cart: #ffffff;
+  --color-svg-account: #ffffff;
 
   --color-text-current-price: #000000;
   --color-text-previous-price: #929292;
@@ -46,9 +31,10 @@
   --global-border-radius: 30px;
 
   --akordeon-header: #f9f9f9;
-  --akordeon-header-text: #583101;
-  --akordeon-content-text: #583103;
+  --akordeon-header-text: #000000;
+  --akordeon-content-text: #000000;
   --akordeon-icon: #583103;
+  --product-button: #000000;
 }
 html.dark {
   --main-text: #ffedd8;
@@ -86,16 +72,6 @@ html.dark {
   --akordeon-icon: #ffedd8;
   --akordeon-content-text: #ffedd8;
 }
-/* html.dark {
-  --main-text: #ebebeb;
-  --second-text: #fd7d0e;
-  --background-nav: #222831;
-  --color-form: #222831;
-  --background-products: #393e46;
-  --color-svg: #ebebeb;
-  --color-accent: #e1d8c9;
-  scroll-behavior: smooth;
-} */
 ::-webkit-scrollbar {
   width: 7px;
   background: #dadada;
@@ -107,10 +83,8 @@ html.dark {
 }
 body {
   margin: 0;
-  /* background: var(--background-nav); */
 }
 * {
-  /* font-family: "Cherry Bomb One", system-ui; */
   font-family: "Inter", sans-serif;
   font-weight: 300;
   font-optical-sizing: auto;
@@ -220,7 +194,7 @@ body {
   /* background-image: url("sun.jpg");
   background-size: cover;
   background-position: center; */
-  background: #ede0d4;
+  background: #fff;
   border: 3px solid var(--color-accent);
   border-radius: 30px;
   position: relative;
@@ -231,7 +205,7 @@ body {
 .moon-phase {
   /* background-image: url("moon.jpg");
   background-size: cover; */
-  background: #ede0d4;
+  background: #bcb8b1;
 }
 .contrast-pin {
   border-radius: 50%;
@@ -356,14 +330,14 @@ body {
   height: 50px;
   border: 0;
   outline: 0;
-  font-size: var(--global-text);
+  font-size: var(--global-small-text);
   color: #000;
   background: var(--color-search-input);
   text-align: left;
 }
 #search-input::placeholder {
-  color: #032638;
-  letter-spacing: 1px;
+  color: #000;
+  letter-spacing: 0.2px;
 }
 #search-input:focus {
   border: 0;
@@ -825,22 +799,26 @@ h4 {
   width: 94%;
   margin: 0;
 }
+.productCard-image-wrapper {
+  width: 100%;
+}
 .product-global-wrapper {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: var(--background-products);
+  /* background: var(--background-products); */
 }
 .productCard-mainImage {
   width: 100%;
-  height: 350px;
+  height: 500px;
   overflow-x: scroll;
   overflow-y: hidden;
   scrollbar-width: none;
   scroll-snap-type: both mandatory;
   white-space: nowrap;
+  position: relative;
 }
 .productCard-mainImage img {
   width: 100%;
@@ -952,7 +930,7 @@ h4 {
 .addToCartButton {
   width: 100%;
   height: 56px;
-  background: #000;
+  background: var(--product-button);
   color: #fff;
   border: 0;
   cursor: pointer;
