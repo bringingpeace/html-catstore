@@ -28,16 +28,21 @@
   <body>
     <!-- GLOBAL WRAPPER -->
     <div class="global-wrapper">
+      <div class="back-to-top">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+          <path
+            d="m296-224-56-56 240-240 240 240-56 56-184-183-184 183Zm0-240-56-56 240-240 240 240-56 56-184-183-184 183Z"
+          />
+        </svg>
+      </div>
       <!-- TOP SECTION -->
       <section class="top-section">
         <div class="top-content">
           <div class="menu-area">
-            <button id="hamburger">
+            <div id="hamburger">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                height="26px"
                 viewBox="0 -960 960 960"
-                width="26px"
                 class="hidden"
               >
                 <path
@@ -47,8 +52,6 @@
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
-                heigh="26px"
-                width="26px"
                 stroke="#000"
                 stroke-width="2"
                 stroke-linecap="round"
@@ -58,7 +61,7 @@
                 <path d="M4 18h16" />
                 <path d="M4 6h16" />
               </svg>
-            </button>
+            </div>
           </div>
 
           <div class="logo">
@@ -78,8 +81,6 @@
             <div class="nav-icons-icon heart">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="28"
-                height="28"
                 viewBox="0 0 24 24"
                 class="icon icon-tabler icons-tabler-filled icon-tabler-heart"
               >
@@ -91,25 +92,15 @@
             </div>
 
             <div class="nav-icons-icon cart">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="24px"
-                viewBox="0 -960 960 960"
-                width="24px"
-              >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
                 <path
                   d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"
                 />
               </svg>
             </div>
 
-            <div id="account">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 512 512"
-                width="24px"
-                height="24px"
-              >
+            <div class="nav-icons-icon account">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                 <path
                   d="M399 384.2C376.9 345.8 335.4 320 288 320l-64 0c-47.4 0-88.9 25.8-111 64.2c35.2 39.2 86.2 63.8 143 63.8s107.8-24.7 143-63.8zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm256 16a72 72 0 1 0 0-144 72 72 0 1 0 0 144z"
                 />
@@ -148,77 +139,45 @@
       </section>
       <!-- MID SECTION -->
       <section class="mid-section">
+        <!-- <div class="mid-hero-image"></div> -->
         <div class="mid-content">
-          <div class="main-label">
-            <div class="main-label-text">
-              <h3>Bluzy z nadrukiem</h3>
-            </div>
-
-            <div class="main-label-filter">
-              <div class="filter-layout">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="24px"
-                  viewBox="0 -960 960 960"
-                  width="24px"
-                  fill="#000"
-                  class="layout-icon"
-                >
-                  <path
-                    d="M360-160q-33 0-56.5-23.5T280-240q0-33 23.5-56.5T360-320q33 0 56.5 23.5T440-240q0 33-23.5 56.5T360-160Zm240 0q-33 0-56.5-23.5T520-240q0-33 23.5-56.5T600-320q33 0 56.5 23.5T680-240q0 33-23.5 56.5T600-160ZM360-400q-33 0-56.5-23.5T280-480q0-33 23.5-56.5T360-560q33 0 56.5 23.5T440-480q0 33-23.5 56.5T360-400Zm240 0q-33 0-56.5-23.5T520-480q0-33 23.5-56.5T600-560q33 0 56.5 23.5T680-480q0 33-23.5 56.5T600-400ZM360-640q-33 0-56.5-23.5T280-720q0-33 23.5-56.5T360-800q33 0 56.5 23.5T440-720q0 33-23.5 56.5T360-640Zm240 0q-33 0-56.5-23.5T520-720q0-33 23.5-56.5T600-800q33 0 56.5 23.5T680-720q0 33-23.5 56.5T600-640Z"
-                  />
-                </svg>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="24px"
-                  viewBox="0 -960 960 960"
-                  width="24px"
-                  fill="#000"
-                  class="layout-icon hidden"
-                >
-                  <path
-                    d="M480-160q-33 0-56.5-23.5T400-240q0-33 23.5-56.5T480-320q33 0 56.5 23.5T560-240q0 33-23.5 56.5T480-160Zm0-240q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm0-240q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Z"
-                  />
-                </svg>
-                <h4 for="sort-icon">układ</h4>
-              </div>
-              <div class="">
-                <h4 for="filter-icon">popularne</h4>
+          <div class="mid-head">
+            <h1 class="mid-head-heading">Kocie bluzy</h1>
+            <div class="mid-head-sortButton">
+              <div class="sortButton-head">
                 <svg
                   id="filter-icon"
                   xmlns="http://www.w3.org/2000/svg"
-                  height="24px"
                   viewBox="0 -960 960 960"
-                  width="24px"
-                  fill="#000"
                 >
-                  <path d="M480-360 280-560h400L480-360Z" />
+                  <path d="M400-280v-400l200 200-200 200Z" />
                 </svg>
+                Sortuj wg. popularne
+              </div>
+              <div class="sortButton-dropdown">
+                <a class="sortButton-dropdown-element" href="">cena rosnąco </a>
+                <a class="sortButton-dropdown-element" href="">cena malejąco</a>
+                <a class="sortButton-dropdown-element" href=""
+                  >najwięcej wzorów</a
+                >
+                <a class="sortButton-dropdown-element" href=""
+                  >najmniej wzorów</a
+                >
               </div>
             </div>
           </div>
+
           <div class="product-container-merch">
             <!-- <div class="product">
               <img class="product-image" src="" alt="" />
               <div class="product-data">
                 <div class="product-text-data">
-                  <h4>$product_name</h4>
-                  <h5>$product_currentPrice</h5>
-                  <h5><s>$product_previousPrice</s></h5>
+                  <h4 class="product-name">$product_name</h4>
+                  <h5 class="product-current-price">$product_currentPrice</h5>
+                  <h5 class="product-previous-price"><s>$product_previousPrice</s></h5>
                   <div class="product-patterns">
                     <div class="product-pattern"></div>
                   </div>
-                </div>
-                <div class="product-addtocart-icon">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 -960 960 960"
-                    fill="#000000"
-                  >
-                    <path
-                      d="M440-600v-120H320v-80h120v-120h80v120h120v80H520v120h-80ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z"
-                    />
-                  </svg>
                 </div>
               </div>
             </div>
@@ -227,62 +186,65 @@
         </div>
       </section>
       <!-- NEWSLETTER SECTION -->
-      <section class="details-section">
-        <div class="details-content">
-          <div class="news">
-            <h4>Drugi kubek gratis. Dołącz do kociego klubu!</h4>
-            <form action="https://api.web3forms.com/submit" method="POST">
-              <input
-                type="hidden"
-                name="access_key"
-                value="72b7cd45-68b6-402b-95ec-1822882783af"
-              />
-              <input type="name" name="name" placeholder="Imię" required />
-              <input type="email" name="email" placeholder="Adres e-mail" />
-              <!-- <textarea
-                  name="message"
-                  placeholder="Twoja wiadomość"
-                  required
-                ></textarea>
-                <input
-                  type="checkbox"
-                  name="botcheck"
-                  class="hidden"
-                  style="display: none"
-                />
-                <input
+      <section class="newsletter-section">
+        <div class="news">
+          <h2>Koci newsletter 🐈</h2>
+          <p>
+            Tylko najlepsze oferty kocich kubków i merchu.<br />
+            PS. Przy zapisie drugi kubek gratis!
+          </p>
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input
+              type="hidden"
+              name="access_key"
+              value="72b7cd45-68b6-402b-95ec-1822882783af"
+              id="send-form"
+            />
+            <input type="name" name="name" placeholder="Imię" required />
+            <input type="email" name="email" placeholder="Adres e-mail" />
+            <!-- <textarea
+              name="message"
+              placeholder="Twoja wiadomość"
+              required
+            ></textarea>
+            <input
+              type="checkbox"
+              name="botcheck"
+              class="hidden"
+              style="display: none"
+            /> -->
+            <!-- <input
                   type="hidden"
                   name="redirect"
                   value="https://moja stronka z podziękowaniem"
                 /> -->
-            </form>
-            <button>Dołącz teraz</button>
-          </div>
-          <div class="blog-info1">
-            <div class="blog-text">
-              <p>Czym karmić młode kociaki?</p>
-              <button>Odwiedź blog</button>
-            </div>
-          </div>
-          <div class="blog-info2">
-            <div class="blog-text">
-              <p>Porady dot. zdrowego futerka</p>
-              <button>Odwiedź blog</button>
-            </div>
+            <!-- <button>Dołącz teraz</button> -->
+          </form>
+          <button>Dołącz teraz</button>
+        </div>
+      </section>
+      <!-- BLOG SECTION -->
+      <section class="details-section">
+        <div class="details-content">
+          <div class="details-box">
+            <p>Z czego wykonane są nasze kubki?</p>
+            <button>szczegóły</button>
           </div>
         </div>
       </section>
+      <!-- FAQ section -->
+      <section class="faq-section"></section>
       <!-- FOOTER SECTION -->
       <section class="footer-section">
         <div class="footer-content">
-          <div class="store-info">
+          <!-- <div class="store-info">
             <p>😸❤️</p>
             <p>
               Sklep o charakterze charytatywnym. Co kwartał przekazujemy 50%
               naszych przychodów dla kociego schroniska, wybranego przez naszych
               klientów.
             </p>
-          </div>
+          </div> -->
 
           <div class="store-details">
             <h2>Kontakt</h2>
@@ -350,6 +312,7 @@
         </div>
       </section>
     </div>
+
     <script src="catstore.js"></script>
     <script src="produkty.js"></script>
   </body>
