@@ -10,6 +10,29 @@ const clickedProduct = wszystkieProdukty.find(function (produkt) {
 if (clickedProduct) {
   renderProduct(clickedProduct);
 }
+
+let kategoria;
+function fillData() {
+  if (clickedProduct.category === "Kubki") {
+    return `
+                  <span style="font-weight: 600"> Height</span>: ${clickedProduct.height},<br />
+                  <span style="font-weight: 600"> Diameter</span>: ${clickedProduct.diameter},<br />
+                  <span style="font-weight: 600"> Weight:</span> ${clickedProduct.weight},<br />
+                  <span style="font-weight: 600"> Capacity:</span> ${clickedProduct.capacity}
+    `;
+  } else if (clickedProduct.category === "Bluzy") {
+    return `
+                  <span style="font-weight: 600"> Sex</span>: ${clickedProduct.sex},<br />
+                  <span style="font-weight: 600"> Style</span>: ${clickedProduct.styl},<br />
+    `;
+  } else if (clickedProduct.category === "Koszulki") {
+    return `
+                  <span style="font-weight: 600"> Sex</span>: ${clickedProduct.sex},<br />
+                  <span style="font-weight: 600"> Style</span>: ${clickedProduct.styl},<br />
+    `;
+  }
+}
+
 function renderProduct() {
   const globalProductCard = document.querySelector(".globalProductCard");
 
@@ -23,10 +46,18 @@ function renderProduct() {
   globalProductCard.innerHTML = `
 
      <div class="productSource">
-          <p>Strona główna > Kubki z nadrukiem > ${clickedProduct.name}</p>
+          <p>Strona główna > <a class="sourceLink" href="${
+            clickedProduct.category
+          }.html">${clickedProduct.category}</a> > ${clickedProduct.name}</p>
         </div>
         <div class="product-global-wrapper">
           <div class="productCard-image-wrapper">
+           <div class="productCard-image-control-left">
+           <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff"><path d="M640-80 240-480l400-400 71 71-329 329 329 329-71 71Z"/></svg>
+           </div>
+           <div class="productCard-image-control-right">
+           <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z"/></svg>
+           </div>
             <div class="productCard-mainImage" dir="ltr">
               ${zdjecia}
             </div>
@@ -35,12 +66,20 @@ function renderProduct() {
           <div class="productCard-textData-wrapper">
             <div class="productCard-textData">
               <p class="productCard-name">${clickedProduct.name}</p>
-              <p class="productCard-currentPrice">${clickedProduct.currency} ${clickedProduct.currentPrice}</p>
-              <p class="productCard-previousPrice"><s>${clickedProduct.currency} ${clickedProduct.previousPrice}</s></p>
+              <p class="productCard-currentPrice">${clickedProduct.currency} ${
+    clickedProduct.currentPrice
+  }</p>
+              <p class="productCard-previousPrice"><s>${
+                clickedProduct.currency
+              } ${clickedProduct.previousPrice}</s></p>
               <p class="productCard-omnibus">
-                Najniższa cena tego produktu w ostatnich 30 dniach: ${clickedProduct.currency} ${clickedProduct.previousPrice}
+                Najniższa cena tego produktu, w ostatnich 30 dniach wynosiła: ${
+                  clickedProduct.currency
+                } ${clickedProduct.previousPrice}
               </p>
-              <p class="productCard-amount">Pozostało sztuk: ${clickedProduct.amount}</p>
+              <p class="productCard-amount">Pozostało sztuk: ${
+                clickedProduct.amount
+              }</p>
             </div>
           </div>
 
@@ -82,7 +121,7 @@ function renderProduct() {
                 aria-expanded="false"
                 aria-controls="product-description2"
               >
-                Waga i wymiary
+                Cechy
                 <div class="productCard-accordeon-iconContainer">
                   <div class="productCard-accordeon-iconContainer1"></div>
                   <div class="productCard-accordeon-iconContainer2"></div>
@@ -93,10 +132,7 @@ function renderProduct() {
                 id="product-description2"
               >
                 <div class="content-in">
-                  <span style="font-weight: 600"> Height</span>: ${clickedProduct.height},<br />
-                  <span style="font-weight: 600"> Diameter</span>: ${clickedProduct.diameter},<br />
-                  <span style="font-weight: 600"> Weight:</span> ${clickedProduct.weight},<br />
-                  <span style="font-weight: 600"> Capacity:</span> ${clickedProduct.capacity},
+                  ${fillData()}
                 </div>
               </div>
             </div>
@@ -129,6 +165,33 @@ function renderProduct() {
 
   `;
 }
+//productImage controls
+const slideLeft = document.querySelector(".productCard-image-control-left");
+const slideRight = document.querySelector(".productCard-image-control-right");
+const productImageSlider = document.querySelector(".productCard-mainImage");
+
+const sliders = [slideLeft, slideRight];
+
+sliders.forEach(function (slider) {
+  if (clickedProduct.images.length > 1) {
+    slideLeft.style.display = "flex";
+    slideRight.style.display = "flex";
+  }
+  slider.addEventListener("click", function () {
+    if (slider.classList.contains("productCard-image-control-left")) {
+      productImageSlider.scrollBy({
+        left: -1,
+        behavior: "smooth",
+      });
+    } else {
+      productImageSlider.scrollBy({
+        left: 1,
+        behavior: "smooth",
+      });
+    }
+  });
+});
+
 //Akordeony pod produktem
 const akordeony = document.querySelectorAll(".productCard-accordeon-header");
 akordeony.forEach(function (akordeon) {
