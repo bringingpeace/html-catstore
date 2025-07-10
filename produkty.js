@@ -240,7 +240,7 @@ const bluzy = [
       "Bluza z długim rękawem o luźnym kroju. U góry znajduje się szeroki kaptur. Dół bluzy oraz zakończenia rękawów zostały obszyte taśmą ściągającą, która pozwoli osadzić się bluzie na sylwetce. Z przodu znajduje się naszyta aplikacja śpiącego kotka.",
     composition: "60% BAWEŁNA, 40% POLIESTER",
     size: ["XS", "S", "M", "L"],
-    images: [`../ai/UBRANIA/BLUZY/1.1.jpg`, "../ai/UBRANIA/BLUZY/1.2.jpg"],
+    images: [`BLUZY/1.1.jpg`, "BLUZY/1.2.jpg"],
   },
 
   {
@@ -258,11 +258,7 @@ const bluzy = [
       "Bluza z długim rękawem o luźnym kroju. U góry znajduje się szeroki kaptur. Dół bluzy oraz zakończenia rękawów zostały obszyte taśmą ściągającą, która pozwoli osadzić się bluzie na sylwetce. Z przodu znajduje się naszyta aplikacja śnieżnobiałego kotka, który ucina sobie drzemkę.",
     composition: "60% BAWEŁNA, 40% POLIESTER",
     size: ["XS", "S", "M", "L"],
-    images: [
-      `../ai/UBRANIA/BLUZY/2.1.jpg`,
-      "../ai/UBRANIA/BLUZY/2.2.jpg",
-      "../ai/UBRANIA/BLUZY/2.3.jpg",
-    ],
+    images: [`BLUZY/2.1.jpg`, "BLUZY/2.2.jpg", "BLUZY/2.3.jpg"],
   },
 
   {
@@ -279,7 +275,7 @@ const bluzy = [
       "Bluza z kapturem o kroju loose fit, wyróżniająca się uroczym nadrukiem kotka. Bluza na co dzień. Bluza wykonana z miękkiej dzianiny o wysokiej zawartości bawełny.",
     composition: "60% BAWEŁNA, 40% POLIESTER",
     size: ["XS", "S", "M", "L", "XL"],
-    images: ["../ai/UBRANIA/BLUZY/3.jpg"],
+    images: ["BLUZY/3.jpg"],
   },
 
   {
@@ -296,7 +292,7 @@ const bluzy = [
       '"Kończ tą pracę i zajmij się mną!".Bluza z kotem śpiącym na laptopie. Bluza z długim rękawem o luźnym kroju. U góry znajduje się szeroki kaptur. Dół bluzy oraz zakończenia rękawów zostały obszyte taśmą ściągającą, która pozwoli osadzić się bluzie na sylwetce. Z przodu znajduje się naszyta aplikacja śnieżnobiałego kotka, który ucina sobie drzemkę na Twoim narzędziu pracy.Bluza posiada z przodu tzw. kieszeń kangurka.',
     composition: "60% BAWEŁNA, 40% POLIESTER",
     size: ["XS", "S", "M", "L", "XL"],
-    images: ["../ai/UBRANIA/BLUZY/4.jpg"],
+    images: ["BLUZY/4.jpg"],
   },
 
   {
@@ -313,7 +309,7 @@ const bluzy = [
       "Bluza z uroczym kociakiem o długiej sierści. Bluza z długim rękawem. U góry znajduje się kaptur. Dół bluzy oraz zakończenia rękawów zostały obszyte taśmą ściągającą, która pozwoli osadzić się bluzie na sylwetce. Z przodu znajduje się pojemna tzw. kieszeń kangurka.",
     composition: "77% BAWEŁNA, 23% POLIESTER",
     size: ["XS", "S", "M", "L", "XL"],
-    images: ["../ai/UBRANIA/BLUZY/5.1.jpg", "../ai/UBRANIA/BLUZY/5.2.jpg"],
+    images: ["BLUZY/5.1.jpg", "BLUZY/5.2.jpg"],
   },
 
   {
@@ -330,7 +326,7 @@ const bluzy = [
       "Luźna bluza z długim rękawem. Dół bluzy oraz zakończenia rękawów zostały obszyte taśmą ściągającą, która pozwoli osadzić się bluzie na sylwetce. Pozytywny pomarańczowy kolor ożywia bluzę.Na bluzie znajduje się nadruk kota z psem.",
     composition: "77% BAWEŁNA, 23% POLIESTER",
     size: ["XS", "S", "M", "L", "XL"],
-    images: ["../ai/UBRANIA/BLUZY/6.jpg"],
+    images: ["BLUZY/6.jpg"],
   },
 
   {
@@ -347,7 +343,7 @@ const bluzy = [
       '"Pobawmy się piłeczką!".Bluza z kotem bawiązym się piłeczką. Damska bluza z długim rękawem. U góry znajduje się kaptur. Dół bluzy oraz zakończenia rękawów zostały obszyte taśmą ściągającą, która pozwoli osadzić się bluzie na sylwetce. Z przodu znajduje się pojemna tzw. kieszeń kangurka.',
     composition: "60% BAWEŁNA, 40% POLIESTER",
     size: ["XS", "S", "M"],
-    images: ["../ai/UBRANIA/BLUZY/7.jpg"],
+    images: ["BLUZY/7.jpg"],
   },
 
   {
@@ -364,7 +360,7 @@ const bluzy = [
       "Bluza z kotem siedzącym wśród kwiatków. Spokojny odcień zieleni bluzy działa uspokajająco. Luźna bluza z długim rękawem. Dół bluzy oraz zakończenia rękawów zostały obszyte taśmą ściągającą, która pozwoli osadzić się bluzie na sylwetce.",
     composition: "60% BAWEŁNA, 40% POLIESTER",
     size: ["XS", "S", "M", "L", "XL"],
-    images: ["../ai/UBRANIA/BLUZY/8.jpg"],
+    images: ["BLUZY/8.jpg"],
   },
 
   {
@@ -381,7 +377,7 @@ const bluzy = [
       "Bluza z pociesznym puszystym kotkiem. Luźna bluza z długim rękawem. Jej miękki materiał zagwarantuje Ci miłe  w dotyku doznania. Dół bluzy oraz zakończenia rękawów zostały obszyte taśmą ściągającą, która pozwoli osadzić się bluzie na sylwetce.",
     composition: "66% BAWEŁNA, 34% POLIESTER",
     size: ["XS", "S", "M", "L", "XL"],
-    images: ["../ai/UBRANIA/BLUZY/9.jpg"],
+    images: ["BLUZY/9.jpg"],
   },
 ];
 
@@ -400,7 +396,7 @@ const koszulki = [
       "T-shirt z wysokiej jakości bawełny.Koszulka została zaprojektowana z modnym wzorem kultowego kota. Idealny zarówno do casualowych stylizacji, na spotkanie z przyjaciółmi jak i na imprezę. Koszulka stworzona z myślą o Tobie oraz z miłości do zwierząt.",
     composition: "100% BAWEŁNA",
     size: ["XS", "S", "M", "L", "XL"],
-    images: ["../ai/UBRANIA/KOSZULKI/1.jpg"],
+    images: ["KOSZULKI/1.jpg"],
   },
   {
     id: 23,
@@ -416,7 +412,7 @@ const koszulki = [
       "Top Best Friends Kot I Pies. Przewiewny top idealny na gorące dni. Wysokiej jakości bawełna.",
     composition: "90% BAWEŁNA, 10% POLIESTER",
     size: ["XS", "S", "M", "L", "XL"],
-    images: ["../ai/UBRANIA/KOSZULKI/2.jpg"],
+    images: ["KOSZULKI/2.jpg"],
   },
   {
     id: 24,
@@ -432,7 +428,7 @@ const koszulki = [
       "Koszulka wykonana z wysokiej jakości bawełny. Idealna na codzień. Stworzona z myślą o Tobie oraz z miłości do zwierząt. Przedstawia szczęśliwą kocią rodzinkę.",
     composition: "100% BAWEŁNA",
     size: ["XS", "S", "M"],
-    images: ["../ai/UBRANIA/KOSZULKI/3.jpg"],
+    images: ["KOSZULKI/3.jpg"],
   },
   {
     id: 25,
@@ -448,7 +444,7 @@ const koszulki = [
       "Koszulka z trzema kocimi łobuzami siedzącymi w koszyku. Koszulka wykonana z wysokiej jakości bawełny. Idealna na codzień. Stworzona z myślą o Tobie oraz z miłości do zwierząt.",
     composition: "70% BAWEŁNA, 30% POLIESTER",
     size: ["XS", "S", "M", "L", "XL"],
-    images: ["../ai/UBRANIA/KOSZULKI/4.jpg"],
+    images: ["KOSZULKI/4.jpg"],
   },
   {
     id: 26,
@@ -464,7 +460,7 @@ const koszulki = [
       "Top dla prawdziwego gamera. Przypomina Ci coś? Koszulka wykonana z wysokiej jakości bawełny. Idealna na codzień. Stworzona z myślą o Tobie oraz z miłości do zwierząt.",
     composition: "60% BAWEŁNA, 40% POLIESTER",
     size: ["XS", "S", "M", "L", "XL"],
-    images: ["../ai/UBRANIA/KOSZULKI/5.jpg"],
+    images: ["KOSZULKI/5.jpg"],
   },
   {
     id: 27,
@@ -480,7 +476,7 @@ const koszulki = [
       "Top z dwoma śpioszkami - kotkiem i pieskiem. Dla prawdziwego miłośnika zwierząt domowych! Koszulka wykonana z wysokiej jakości bawełny. Idealna na codzień. Stworzona z myślą o Tobie oraz z miłości do zwierząt.",
     composition: "90% BAWEŁNA, 10% POLIESTER",
     size: ["XS", "S", "M", "L", "XL"],
-    images: ["../ai/UBRANIA/KOSZULKI/6.jpg"],
+    images: ["KOSZULKI/6.jpg"],
   },
   {
     id: 28,
@@ -496,7 +492,7 @@ const koszulki = [
       "Top z kotem rozwalonym na kanapie z tajemniczym napojem w łapce. Koszulka wykonana z wysokiej jakości bawełny. Idealna na codzień. Stworzona z myślą o Tobie oraz z miłości do zwierząt.",
     composition: "100% BAWEŁNA",
     size: ["XS", "S", "M", "L", "XL"],
-    images: ["../ai/UBRANIA/KOSZULKI/7.jpg"],
+    images: ["KOSZULKI/7.jpg"],
   },
   {
     id: 29,
@@ -512,7 +508,7 @@ const koszulki = [
       "Top z głodnym lub wybrednym na jedzenie kotem. Koszulka wykonana z wysokiej jakości bawełny. Idealna na codzień. Stworzona z myślą o Tobie oraz z miłości do zwierząt. ",
     composition: "60% BAWEŁNA, 40% POLIESTER",
     size: ["XS", "S", "M", "L", "XL"],
-    images: ["../ai/UBRANIA/KOSZULKI/8.jpg"],
+    images: ["KOSZULKI/8.jpg"],
   },
 ];
 
