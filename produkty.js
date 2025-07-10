@@ -3,6 +3,7 @@
 const kubki = [
   {
     id: 1,
+    category: "Kubki",
     name: "Kubek z poranną kawusią",
     currentPrice: 23.5,
     previousPrice: 27.25,
@@ -21,6 +22,7 @@ const kubki = [
   },
   {
     id: 2,
+    category: "Kubki",
     name: "Kubek z milusińskimi kotkami",
     currentPrice: 18.99,
     previousPrice: 20.55,
@@ -39,6 +41,7 @@ const kubki = [
   },
   {
     id: 3,
+    category: "Kubki",
     name: "Kubek z kotem wyprowadzającym psy na spacer",
     currentPrice: 17.59,
     previousPrice: 21.25,
@@ -56,6 +59,7 @@ const kubki = [
   },
   {
     id: 4,
+    category: "Kubki",
     name: "Kubek z uroczym kotkiem",
     currentPrice: 14.99,
     previousPrice: 18,
@@ -73,6 +77,7 @@ const kubki = [
   },
   {
     id: 5,
+    category: "Kubki",
     name: "Kubek z kotem w płaszczyku",
     currentPrice: 24.25,
     previousPrice: 28.25,
@@ -91,6 +96,7 @@ const kubki = [
   },
   {
     id: 6,
+    category: "Kubki",
     name: "Kubek z kawą na wynos",
     currentPrice: 17.45,
     previousPrice: 21.25,
@@ -108,6 +114,7 @@ const kubki = [
   },
   {
     id: 7,
+    category: "Kubki",
     name: "Kubek z dwoma rudzielcami",
     currentPrice: 13.35,
     previousPrice: 15.25,
@@ -125,6 +132,7 @@ const kubki = [
   },
   {
     id: 8,
+    category: "Kubki",
     name: "Kubek z kocią jogą",
     currentPrice: 25.55,
     previousPrice: 20.99,
@@ -142,6 +150,7 @@ const kubki = [
   },
   {
     id: 9,
+    category: "Kubki",
     name: "Kubek z kotem w koszyczku",
     currentPrice: 10.5,
     previousPrice: 8.5,
@@ -160,6 +169,7 @@ const kubki = [
   },
   {
     id: 10,
+    category: "Kubki",
     name: "Kubek z kotami na drapaku",
     currentPrice: 12.5,
     previousPrice: 12.5,
@@ -177,6 +187,7 @@ const kubki = [
   },
   {
     id: 11,
+    category: "Kubki",
     name: "Kubek z zielonookim kotem",
     currentPrice: 15.25,
     previousPrice: 15.25,
@@ -194,6 +205,7 @@ const kubki = [
   },
   {
     id: 12,
+    category: "Kubki",
     name: "Kubek z Yin i Yang",
     currentPrice: 10.5,
     previousPrice: 8.5,
@@ -215,6 +227,7 @@ const kubki = [
 const bluzy = [
   {
     id: 13,
+    category: "Bluzy",
     name: "Bluza ze śpiącym Mruczkiem",
     currentPrice: 21.5,
     previousPrice: 26.99,
@@ -232,6 +245,7 @@ const bluzy = [
 
   {
     id: 14,
+    category: "Bluzy",
     name: "Bluza z bajecznym kotkiem",
     currentPrice: 25.5,
     previousPrice: 24.99,
@@ -253,6 +267,7 @@ const bluzy = [
 
   {
     id: 15,
+    category: "Bluzy",
     name: "Bluza ze słodkim buraskiem",
     currentPrice: 25.5,
     previousPrice: 27.25,
@@ -269,6 +284,7 @@ const bluzy = [
 
   {
     id: 16,
+    category: "Bluzy",
     name: "Bluza z ucinającym sobie drzemkę kotem na laptopie",
     currentPrice: 28.5,
     previousPrice: 28.5,
@@ -285,6 +301,7 @@ const bluzy = [
 
   {
     id: 17,
+    category: "Bluzy",
     name: "Bluza z uroczym kociakiem",
     currentPrice: 22.25,
     previousPrice: 23.5,
@@ -301,6 +318,7 @@ const bluzy = [
 
   {
     id: 18,
+    category: "Bluzy",
     name: "Bluza z przyjaciółmi",
     currentPrice: 26.5,
     previousPrice: 25.5,
@@ -317,6 +335,7 @@ const bluzy = [
 
   {
     id: 19,
+    category: "Bluzy",
     name: "Bluza z rozbrykanym kotkiem",
     currentPrice: 22.5,
     previousPrice: 25.5,
@@ -333,6 +352,7 @@ const bluzy = [
 
   {
     id: 20,
+    category: "Bluzy",
     name: "Bluza z kotem ogrodnika",
     currentPrice: 24.5,
     previousPrice: 25.5,
@@ -349,6 +369,7 @@ const bluzy = [
 
   {
     id: 21,
+    category: "Bluzy",
     name: "Bluza z puszystym kotkiem",
     currentPrice: 24.5,
     previousPrice: 25.5,
@@ -367,6 +388,7 @@ const bluzy = [
 const koszulki = [
   {
     id: 22,
+    category: "Koszulki",
     name: "Koszulka z białym futrzakiem",
     currentPrice: 25.5,
     previousPrice: 27.25,
@@ -382,6 +404,7 @@ const koszulki = [
   },
   {
     id: 23,
+    category: "Koszulki",
     name: "Top - Chodź się PSItul",
     currentPrice: 25.5,
     previousPrice: 27.25,
@@ -397,6 +420,7 @@ const koszulki = [
   },
   {
     id: 24,
+    category: "Koszulki",
     name: "Koszulka z kocią rodzinką",
     currentPrice: 15.85,
     previousPrice: 23.25,
@@ -412,6 +436,7 @@ const koszulki = [
   },
   {
     id: 25,
+    category: "Koszulki",
     name: "Koszulka z trzema łobuzami",
     currentPrice: 17.5,
     previousPrice: 20.4,
@@ -427,6 +452,7 @@ const koszulki = [
   },
   {
     id: 26,
+    category: "Koszulki",
     name: "Koszulka/Top dla gamera",
     currentPrice: 10.7,
     previousPrice: 12.45,
@@ -442,6 +468,7 @@ const koszulki = [
   },
   {
     id: 27,
+    category: "Koszulki",
     name: "Koszulka/Top ze śpioszkami",
     currentPrice: 8,
     previousPrice: 15.25,
@@ -457,6 +484,7 @@ const koszulki = [
   },
   {
     id: 28,
+    category: "Koszulki",
     name: "Top z kotem kanapowcem",
     currentPrice: 15.5,
     previousPrice: 10,
@@ -472,6 +500,7 @@ const koszulki = [
   },
   {
     id: 29,
+    category: "Koszulki",
     name: "Top z głodnym kotem",
     currentPrice: 17.5,
     previousPrice: 9,
