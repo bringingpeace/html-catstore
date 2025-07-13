@@ -130,8 +130,8 @@ body {
 .back-to-top {
   background: #000;
   border-radius: 50%;
-  height: 60px;
-  width: 60px;
+  height: 40px;
+  width: 40px;
   position: fixed;
   z-index: 1500;
   bottom: 15svh;
@@ -776,6 +776,24 @@ h4 {
   box-shadow: 0px 0px 5px 0px #a1a1a143;
   z-index: 1;
 }
+.productCard-summary-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.productCard-summary-header-button {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background: rgb(220, 220, 220);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.productCard-summary-header-button svg {
+  fill: #ffffff;
+}
 .productCard-summary-name {
   font-size: var(--global-text);
   font-weight: 600;
@@ -1014,101 +1032,82 @@ h4 {
 }
 /* FavPAGE */
 .favPage-wrapper {
-  width: 94%;
-  background: var(--background-products);
-  /* height: 500px; */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.favPage-header {
-  font-size: var(--global-medium-text);
-  color: var(--main-text);
   width: 100%;
+  padding: 2rem;
+  /* background: var(--background-products); */
 }
-.favPage-products-wrapper {
-  display: grid;
-  justify-content: center;
-  grid-template-columns: repeat(2, minmax(40%, 190px));
-  grid-auto-rows: 340px;
-  gap: 0.5rem;
-  overflow: hidden;
+.favProducts-wrapper {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.backButton {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.backButton p {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .favProduct {
-  width: 200px;
-  /* height: 350px; */
-  /* padding: 1rem; */
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-  background: #ffffff;
-  box-shadow: 0px 5px 5px 5px #87878715;
-  position: relative;
-  cursor: pointer;
-  overflow: hidden;
-}
-.favProduct:hover {
-}
-.favProduct-image {
   width: 100%;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 10px 10px 0px 0px;
-  filter: grayscale(30%);
-  transition: filter 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  background: #fefefe;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 0px #adadad3e;
 }
-.favProduct-image:hover {
-  filter: grayscale(0%);
+.favProduct img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px 0px 0px 10px;
+  cursor: pointer;
 }
 .favProduct-data {
-  margin-top: 0.5rem;
-}
-.favProduct-data p {
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-  margin-left: 1rem;
-  color: rgb(0, 0, 0);
-}
-.favProduct-name {
-  font-size: var(--global-text);
-}
-.favProduct-price {
   display: flex;
   flex-direction: column;
+  width: 50%;
 }
-.favProduct-current-price {
-  font-size: var(--global-text);
+.favProductName {
+  margin: 0;
+  font-size: var(--global-small-text);
+}
+.favProductDetails {
+  margin: 0;
+  font-size: var(--global-small-text);
+  color: var(--second-text);
+}
+.favProductPrice {
+  margin: 0;
+  font-size: var(--global-small-text);
   font-weight: 500;
 }
-.favProduct-ux {
+.favProduct-ui {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
-  margin-left: 0.5rem;
-  overflow: hidden;
-  position: absolute;
-  top: 200px;
+  width: 20%;
+  height: 100px;
 }
-.favProduct-svg {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 10px;
-  background: #ffffffd2;
-  backdrop-filter: blur(5px);
+.favProduct-ui svg {
+  border-radius: 50%;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: background 0.5s ease;
+  fill: var(--background-nav);
 }
-.favProduct-svg:hover {
-  background: #ffffffec;
-  box-shadow: inset 0px 3px 5px rgba(172, 172, 172, 0.097);
+.favProduct-ui svg:hover {
+  background: #f2f2f2;
 }
-.favProduct-svg:active {
-  background: #ebebeb;
+.favProduct-ui svg:active {
+  background: #e0e0e0;
 }
 /* CartPAGE */
