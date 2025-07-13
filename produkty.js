@@ -517,7 +517,7 @@ const wszystkieProdukty = [...kubki, ...bluzy, ...koszulki];
 const nameShortener = function (arr) {
   arr.forEach(function (element) {
     const imie = element.name;
-    const shortName = imie.slice(0, 15);
+    const shortName = imie.slice(0, 20);
     return (element.shortName = shortName + "...");
   });
 };
@@ -532,28 +532,28 @@ const productAreaTshirts = document.querySelector(".product-container-tshirts");
 const addMugs = function (arr) {
   productAreaMugs.innerHTML = "";
   arr.forEach(function (produkt, index) {
-    const patternHTML = produkt.pattern
-      ? produkt.pattern
-          .map(
-            (color) =>
-              `<div class="product-pattern" style="background-color:${color}"></div>`
-          )
-          .join("")
-      : "";
     const productHTML = `
-    <div class="product">
-              <img class="product-image" src="${produkt.images[0]}" data-id="${produkt.id}" alt="" />
-              <div class="product-data">
-                <div class="product-text-data">
-                <div class="product-patterns">
-                  ${patternHTML}
-                  </div>
-                  <h4 class="product-name">${produkt.shortName}</h4> 
-                  <div class="product-price">
-                  <h5 class="product-current-price">${produkt.currentPrice} ${produkt.currency}</h5>
-                  <h5 class="product-previous-price"><s>${produkt.previousPrice} ${produkt.currency}</s></h5>
-                  </div>
-                  <h5 class="product-amount">Pozostało sztuk: ${produkt.amount}</h5>
+            <div class="product">
+              <img class="product-image" src="${produkt.images[0]}" alt="" />
+              <div class="addToFav">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="icon icon-tabler icons-tabler-filled icon-tabler-heart"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M6.979 3.074a6 6 0 0 1 4.988 1.425l.037 .033l.034 -.03a6 6 0 0 1 4.733 -1.44l.246 .036a6 6 0 0 1 3.364 10.008l-.18 .185l-.048 .041l-7.45 7.379a1 1 0 0 1 -1.313 .082l-.094 -.082l-7.493 -7.422a6 6 0 0 1 3.176 -10.215z"
+                  />
+                </svg>
+              </div>
+              <div class="product-text-data">
+                <p class="productName">${produkt.shortName}</p>
+                <div class="priceLine">
+                <p class="productCurrentPrice">${produkt.currency} ${produkt.currentPrice}</p>
+                <p class="productPreviousPrice">
+                  <s>${produkt.currency} ${produkt.previousPrice}</s>
+                </p>
                 </div>
               </div>
             </div>
@@ -565,28 +565,28 @@ const addMugs = function (arr) {
 const addMerch = function (arr) {
   productAreaMerch.innerHTML = "";
   arr.forEach(function (produkt, index) {
-    const patternHTML = produkt.pattern
-      ? produkt.pattern
-          .map(
-            (color) =>
-              `<div class="product-pattern" style="background-color:${color}"></div>`
-          )
-          .join("")
-      : "";
     const productHTML = `
-    <div class="product" >
-              <img class="product-image" src="${produkt.images[0]}" data-id="${produkt.id}" alt="" />
-              <div class="product-data">
-                <div class="product-text-data">
-                <div class="product-patterns">
-                  ${patternHTML}
-                  </div>
-                  <h4 class="product-name">${produkt.shortName}</h4> 
-                  <div class="product-price">
-                  <h5 class="product-current-price">${produkt.currentPrice} ${produkt.currency}</h5>
-                  <h5 class="product-previous-price"><s>${produkt.previousPrice} ${produkt.currency}</s></h5>
-                  </div>
-                  <h5 class="product-amount">Pozostało sztuk: ${produkt.amount}</h5>
+     <div class="product">
+              <img class="product-image" src="${produkt.images[0]}" alt="" />
+              <div class="addToFav">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="icon icon-tabler icons-tabler-filled icon-tabler-heart"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M6.979 3.074a6 6 0 0 1 4.988 1.425l.037 .033l.034 -.03a6 6 0 0 1 4.733 -1.44l.246 .036a6 6 0 0 1 3.364 10.008l-.18 .185l-.048 .041l-7.45 7.379a1 1 0 0 1 -1.313 .082l-.094 -.082l-7.493 -7.422a6 6 0 0 1 3.176 -10.215z"
+                  />
+                </svg>
+              </div>
+              <div class="product-text-data">
+                <p class="productName">${produkt.name}</p>
+                <div class="priceLine">
+                <p class="productCurrentPrice">${produkt.currency} ${produkt.currentPrice}</p>
+                <p class="productPreviousPrice">
+                  <s>${produkt.currency} ${produkt.previousPrice}</s>
+                </p>
                 </div>
               </div>
             </div>
@@ -598,28 +598,28 @@ const addMerch = function (arr) {
 const addTshirts = function (arr) {
   productAreaTshirts.innerHTML = "";
   arr.forEach(function (produkt, index) {
-    const patternHTML = produkt.pattern
-      ? produkt.pattern
-          .map(
-            (color) =>
-              `<div class="product-pattern" style="background-color:${color}"></div>`
-          )
-          .join("")
-      : "";
     const productHTML = `
-     <div class="product">
-              <img class="product-image" src="${produkt.images[0]}" data-id="${produkt.id}" alt="" />
-              <div class="product-data">
-                <div class="product-text-data">
-                <div class="product-patterns">
-                  ${patternHTML}
-                  </div>
-                  <h4 class="product-name">${produkt.shortName}</h4> 
-                  <div class="product-price">
-                  <h5 class="product-current-price">${produkt.currentPrice} ${produkt.currency}</h5>
-                  <h5 class="product-previous-price"><s>${produkt.previousPrice} ${produkt.currency}</s></h5>
-                  </div>
-                  <h5 class="product-amount">Pozostało sztuk: ${produkt.amount}</h5>
+      <div class="product">
+              <img class="product-image" src="${produkt.images[0]}" alt="" />
+              <div class="addToFav">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="icon icon-tabler icons-tabler-filled icon-tabler-heart"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M6.979 3.074a6 6 0 0 1 4.988 1.425l.037 .033l.034 -.03a6 6 0 0 1 4.733 -1.44l.246 .036a6 6 0 0 1 3.364 10.008l-.18 .185l-.048 .041l-7.45 7.379a1 1 0 0 1 -1.313 .082l-.094 -.082l-7.493 -7.422a6 6 0 0 1 3.176 -10.215z"
+                  />
+                </svg>
+              </div>
+              <div class="product-text-data">
+                <p class="productName">${produkt.name}</p>
+                <div class="priceLine">
+                <p class="productCurrentPrice">${produkt.currency} ${produkt.currentPrice}</p>
+                <p class="productPreviousPrice">
+                  <s>${produkt.currency} ${produkt.previousPrice}</s>
+                </p>
                 </div>
               </div>
             </div>
