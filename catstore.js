@@ -4,7 +4,9 @@ const html = document.documentElement;
 //Animacja polubionego produktu
 const ulubione = document.querySelectorAll(".ulubione svg");
 const ulubioneWrapper = document.querySelectorAll(".ulubione-wrapper");
+
 const heart = document.querySelector(".heart");
+const cart = document.querySelector(".cart");
 
 const ulubioneKolor = ["#ffffff", "#F04848"];
 
@@ -26,7 +28,9 @@ ulubioneWrapper.forEach(function (wrapper) {
     }
   });
 });
+//
 
+//
 const mobileMenuSwitch = document.getElementById("hamburger");
 const mobileMenuSwitch1 = document.querySelectorAll("#hamburger svg");
 const mobileNav = document.querySelector(".nav");
@@ -63,34 +67,10 @@ const productContainerTshirts = document.querySelector(
 );
 const productImage = document.querySelectorAll(".product-image");
 
-//Zmiana layoutu produktów 1->2<-1
-// layoutButton.addEventListener("click", function () {
-//   layoutIcon.forEach(function (icon) {
-//     icon.classList.toggle("hidden");
-//   });
-
-//   productContainerMugs?.classList.toggle("switchLayout");
-//   productImage.forEach(function (image) {
-//     image.classList.toggle("imageSingleLayout");
-//   });
-
-//   productContainerMerch?.classList.toggle("switchLayout");
-//   productImage.forEach(function (image) {
-//     image.classList.toggle("imageSingleLayout");
-//   });
-
-//   productContainerTshirts?.classList.toggle("switchLayout");
-//   productImage.forEach(function (image) {
-//     image.classList.toggle("imageSingleLayout");
-//   });
-// });
-
 //Zmiana trybu jasności
 const switcher = document.querySelector(".contrast-pin");
 const slider = document.querySelector(".contrast-slider");
 const logo = document.querySelector(".logo");
-// const logoLightTheme = document.querySelector(".logo-light-theme");
-// const logoDarkTheme = document.querySelector(".logo-dark-theme");
 //1. Funkcja przełączająca tryb
 
 function toggleTheme() {
@@ -102,11 +82,11 @@ function toggleTheme() {
   // logoDarkTheme.classList.toggle("hidden", isDark);
   switcher.classList.toggle("pin-active", isDark);
   slider.classList.toggle("moon-phase", isDark);
-  isDark
-    ? (logo.innerHTML =
-        '<img class="logo-dark-theme" src="logo-dark-theme.png" alt="" />')
-    : (logo.innerHTML =
-        '<img class="logo-light-theme" src="logo-dark-theme.png" alt="" />');
+  // isDark
+  //   ? (logo.innerHTML =
+  //       '<img class="logo-dark-theme" src="logo-dark-theme.png" alt="" />')
+  //   : (logo.innerHTML =
+  //       '<img class="logo-light-theme" src="logo-dark-theme.png" alt="" />');
   // logoLightTheme.classList.toggle("hidden", isDark);
   // logoDarkTheme.classList.toggle("hidden", !isDark);
 
@@ -126,8 +106,8 @@ window.addEventListener("DOMContentLoaded", function () {
   if (savedTheme === "dark") {
     html.classList.add("dark");
     slider.classList.add("moon-phase");
-    logo.innerHTML =
-      '<img class="logo-dark-theme" src="logo-dark-theme.png" alt="" />';
+    // logo.innerHTML =
+    //   '<img class="logo-dark-theme" src="logo-dark-theme.png" alt="" />';
     // logoLightTheme.classList.remove("hidden");
     // logoDarkTheme.classList.add("hidden");
 
@@ -139,8 +119,8 @@ window.addEventListener("DOMContentLoaded", function () {
       switcher.style.transition = "left 0.6s ease";
     });
   } else {
-    logo.innerHTML =
-      '<img class="logo-light-theme" src="logo-dark-theme.png" alt="" />';
+    // logo.innerHTML =
+    //   '<img class="logo-light-theme" src="logo-dark-theme.png" alt="" />';
   }
 });
 slider.addEventListener("click", toggleTheme);
@@ -166,7 +146,7 @@ scrollTop.addEventListener("click", function () {
 const topNav = document.querySelector(".top-section");
 window.addEventListener("scroll", function (e) {
   if (window.scrollY > 50) {
-    topNav.style.boxShadow = "0px 1px 5px rgba(0,0,0,0.548)";
+    topNav.style.boxShadow = "0px 1px 5px rgba(0, 0, 0, 0.23)";
   } else {
     topNav.style.boxShadow = "";
   }
@@ -179,7 +159,6 @@ const sortButtonSVG = document.getElementById("filter-icon");
 
 sortButton?.addEventListener("click", function () {
   sortButtonContent.classList.toggle("addDisplayBlock");
-  sortButtonSVG.classList.toggle("sortButton-head-active");
 });
 if (sortButton) {
   html.addEventListener("click", function (e) {
@@ -189,8 +168,18 @@ if (sortButton) {
       sortButtonContent.classList.contains("addDisplayBlock")
     ) {
       sortButtonContent.classList.remove("addDisplayBlock");
-      sortButtonSVG.classList.toggle("sortButton-head-active");
     }
   });
 }
-//karuzelka
+//menu-dropdown ux
+
+const buttonDropdown = document.querySelector(".menu-desktop");
+const menuDropdown = document.querySelector(".menu-desktop-dropdown");
+
+buttonDropdown.addEventListener("mouseenter", function () {
+  menuDropdown.classList.add("showMenu");
+});
+
+buttonDropdown.addEventListener("mouseleave", function () {
+  menuDropdown.classList.remove("showMenu");
+});
