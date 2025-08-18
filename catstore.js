@@ -171,15 +171,15 @@ if (sortButton) {
     }
   });
 }
-//menu-dropdown ux
+//menu-dropdown ux 
 
 const buttonDropdown = document.querySelector(".menu-desktop");
 const menuDropdown = document.querySelector(".menu-desktop-dropdown");
 
-buttonDropdown.addEventListener("mouseenter", function () {
+buttonDropdown?.addEventListener("mouseenter", function () {
   menuDropdown.classList.add("showMenu");
 });
 
-buttonDropdown.addEventListener("mouseleave", function () {
+buttonDropdown?.addEventListener("mouseleave", function () {
   menuDropdown.classList.remove("showMenu");
 });
